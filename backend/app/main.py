@@ -1,13 +1,14 @@
 from fastapi import Depends, FastAPI
 from sqlalchemy import text
 from sqlalchemy.orm import Session
-from app.routers import postsController
+from app.routers import postsRouter, userRouter
 from app.core.config import settings
 from app.db import get_db
 
 
 app = FastAPI(title=settings.app_name)
-app.include_router(postsController.router)
+app.include_router(postsRouter.router)
+app.include_router(userRouter.router)
 
 @app.get("/")
 def read_root():
