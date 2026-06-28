@@ -2,7 +2,10 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from app.db import get_db
 from app.schemas.userDTO import  UserRead, UserCreate
+from app.schemas.followDTO import FollowStatus
+from app.models.user import User
 from app.services import user_Service
+from app.dependencies import get_current_user
 
 router = APIRouter(
     prefix="/users",
@@ -13,9 +16,6 @@ router = APIRouter(
 def get_users(db: Session = Depends(get_db)):
     return user_Service.get_users(db)
 
-@router.post("", response_model=UserRead, status_code=status.HTTP_201_CREATED)
-def create_user(user_data: UserCreate, db: Session = Depends(get_db)):
-    return user_Service.create_user(db, user_data)
 
 @router.get("/{user_id}", response_model=UserRead)
 def get_user(user_id: int, db: Session = Depends(get_db)):
@@ -26,3 +26,13 @@ def get_user(user_id: int, db: Session = Depends(get_db)):
             detail="User not found!"
         )
     return user
+
+@router.post("/{user_id}/follow", response_model=FollowStatus)
+def follow_user(user_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    follow = user_Service.follow_user(db, user_id, current_user)
+    return follow
+
+@router.delete("/{user_id}/follow", response_model=FollowStatus)
+def unfollow_user(user_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    unfollow = user_Service.unfollow_user(db, user_id, current_user )
+    return unfollow

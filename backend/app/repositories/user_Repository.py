@@ -26,7 +26,7 @@ def get_users(db: Session) -> list[User]:
 
 def create_user(db: Session, user_data: UserCreate, hashed_pass: str) -> User:
 
-    user = User(username = user_data.username, email = user_data.email, hashed_password = hashed_pass, avatar_url = user_data.avatar_url, bio = user_data.bio)
+    user = User(username = user_data.username, email = user_data.email, hashed_password = hashed_pass, avatar_url=str(user_data.avatar_url) if user_data.avatar_url else None, bio = user_data.bio)
     db.add(user)
     db.commit()
     db.refresh(user)

@@ -1,5 +1,5 @@
 from app.models.base import Base
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import String, DateTime, ForeignKey, Boolean, Float
 from datetime import datetime, timezone, timedelta
 
@@ -10,7 +10,7 @@ class Post(Base):
     __tablename__ = "posts"
 
     id: Mapped[int] = mapped_column(primary_key=True, index=True)
-    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True, nullable=False)
     image_url: Mapped[str] = mapped_column(String(500), nullable=False)
     brand: Mapped[str | None] = mapped_column(String(255), nullable=True)
     model: Mapped[str | None] = mapped_column(String(255), nullable=True)
@@ -21,3 +21,6 @@ class Post(Base):
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
     expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=calculate_expiration)
+    user: Mapped["User"] = relationship(back_populates="posts")
+    likes: Mapped[list["Like"]] = relationship(back_populates="post")
+    comments: Mapped[list["Comment"]] = relationship(back_populates="post")
