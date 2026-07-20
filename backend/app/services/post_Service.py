@@ -184,3 +184,4 @@ def delete_comment(db: Session, post_id: int, comment_id: int, current_user: Use
     )
 
     return deleted_count > 0
+

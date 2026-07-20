@@ -2,7 +2,7 @@ from pydantic import BaseModel, HttpUrl, Field
 from datetime import datetime
 
 class CommentCreate(BaseModel):
-    content: str
+    content: str = Field(min_lenght=1, max_length=500)
 
 class CommentAuthor(BaseModel):
     id: int

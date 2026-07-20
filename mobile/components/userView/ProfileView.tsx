@@ -1,47 +1,102 @@
-import { User } from "@/types/user"
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
+
 import { AutoSpotColors } from '@/constants/autospotTheme';
+import { Post } from '@/types/post';
+import { UserProfile } from '@/types/user';
+import { PostCard } from '../posts/PostCard';
+
 type ProfileViewProps = {
-    user: User
-    isCurrentUser: boolean
-    onLogout?: () => void
-}
-export function ProfileView({user, isCurrentUser, onLogout}: ProfileViewProps ){
+  profile: UserProfile;
+  posts: Post[];
+  currentUserId?: number;
+  isCurrentUser: boolean;
+  isFollowLoading?: boolean;
+  onEditProfile?: () => void;
+  onOpenSettings?: () => void;
+  onToggleFollow?: () => void;
+  onLogout?: () => void;
+};
 
-    return(
+export function ProfileView({
+  profile,
+  isCurrentUser,
+  onEditProfile,
+  onOpenSettings,
+  onLogout,
+  onToggleFollow,
+  isFollowLoading,
+  posts,
+  currentUserId,
+}: ProfileViewProps) {
+  return (
+    <FlatList
+      data={posts}
+      keyExtractor={(item) => String(item.id)}
+      ListHeaderComponent={
         <View style={styles.screen}>
-      <View style={styles.avatar} />
+          {isCurrentUser && (
+            <Pressable style={styles.settingsButton} onPress={onOpenSettings}>
+              <Ionicons name="settings-outline" size={22} color={AutoSpotColors.text} />
+            </Pressable>
+          )}
 
-      <Text style={styles.username}>@{user.username}</Text>
-      <Text style={styles.bio}>{user.bio ?? 'Car enthusiast profile'}</Text>
+          <View style={styles.avatar} />
 
-      <View style={styles.stats}>
-        <View>
-          <Text style={styles.statNumber}>24</Text>
-          <Text style={styles.statLabel}>Spots</Text>
+          <Text style={styles.username}>@{profile.username}</Text>
+          <Text style={styles.bio}>{profile.bio ?? 'Car enthusiast profile'}</Text>
+
+          <View style={styles.stats}>
+            <View>
+              <Text style={styles.statNumber}>{profile.following_count}</Text>
+              <Text style={styles.statLabel}>Following</Text>
+            </View>
+
+            <View>
+              <Text style={styles.statNumber}>{profile.followers_count}</Text>
+              <Text style={styles.statLabel}>Followers</Text>
+            </View>
+
+            <View>
+              <Text style={styles.statNumber}>{profile.groups_count}</Text>
+              <Text style={styles.statLabel}>Groups</Text>
+            </View>
+          </View>
+
+          {isCurrentUser ? (
+            <Pressable style={styles.editProfileButton} onPress={onEditProfile}>
+              <Text style={styles.editProfileText}>Edit profile</Text>
+            </Pressable>
+          ) : (
+            <Pressable
+              style={[
+                styles.followButton,
+                profile.is_followed_by_me && styles.followingButton,
+                isFollowLoading && styles.disabledButton,
+              ]}
+              onPress={onToggleFollow}
+              disabled={isFollowLoading}
+            >
+              <Text style={styles.followText}>
+                {isFollowLoading
+                  ? 'Loading...'
+                  : profile.is_followed_by_me
+                    ? 'Following'
+                    : 'Follow'}
+              </Text>
+            </Pressable>
+          )}
+
+          <View style={styles.postsDivider} />
         </View>
-
-        <View>
-          <Text style={styles.statNumber}>128</Text>
-          <Text style={styles.statLabel}>Followers</Text>
-        </View>
-
-        <View>
-          <Text style={styles.statNumber}>12</Text>
-          <Text style={styles.statLabel}>Groups</Text>
-        </View>
-      </View>
-
-      {isCurrentUser ? (
-        <Pressable style={styles.logoutButton} onPress={onLogout}>
-          <Text style={styles.logoutText}>Log out</Text>
-        </Pressable>
-      ) : (
-        <Pressable style={styles.followButton}>
-          <Text style={styles.followText}>Follow</Text>
-        </Pressable>
+      }
+      renderItem={({ item }) => (
+        <PostCard
+          post={item}
+          currentUserId={currentUserId}
+        />
       )}
-    </View>
+    />
   );
 }
 
@@ -52,6 +107,19 @@ const styles = StyleSheet.create({
     padding: 16,
     paddingTop: 72,
     alignItems: 'center',
+  },
+  settingsButton: {
+    position: 'absolute',
+    top: 58,
+    right: 16,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: AutoSpotColors.charcoal,
+    borderWidth: 1,
+    borderColor: AutoSpotColors.border,
   },
   avatar: {
     width: 96,
@@ -92,16 +160,18 @@ const styles = StyleSheet.create({
     marginTop: 4,
     textAlign: 'center',
   },
-  logoutButton: {
+  editProfileButton: {
     marginTop: 28,
     height: 48,
     paddingHorizontal: 28,
     borderRadius: 10,
-    backgroundColor: AutoSpotColors.danger,
+    backgroundColor: AutoSpotColors.card,
+    borderWidth: 1,
+    borderColor: AutoSpotColors.border,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  logoutText: {
+  editProfileText: {
     color: AutoSpotColors.text,
     fontWeight: '800',
     fontSize: 15,
@@ -120,4 +190,20 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     fontSize: 15,
   },
-})
+  followingButton: {
+    backgroundColor: AutoSpotColors.card,
+    borderWidth: 1,
+    borderColor: AutoSpotColors.border,
+  },
+  disabledButton: {
+    opacity: 0.65,
+  },
+  postsDivider: {
+    width: '100%',
+    marginTop: 32,
+    marginBottom: 18,
+    paddingTop: 18,
+    borderTopWidth: 1,
+    borderTopColor: AutoSpotColors.border,
+  },
+});

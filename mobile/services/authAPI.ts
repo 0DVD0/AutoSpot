@@ -24,9 +24,13 @@ export type AuthUser = {
 
 export type TokenResponse = {
     access_token: string;
+    refresh_token: string;
     token_type: string;
 };
 
+export type RefreshTokenRequest = {
+  refresh_token: string;
+};
 export async function loginRequest(data: LoginRequest): Promise<TokenResponse> {
     const response = await fetch (`${API_BASE_URL}/auth/login`, {
         method: 'POST',
@@ -71,4 +75,42 @@ export async function getMeRequest(token: string): Promise<AuthUser> {
     }
 
     return response.json();
+}
+
+export async function refreshTokenRequest(
+  refreshToken: string
+): Promise<TokenResponse> {
+  const response = await fetch(`${API_BASE_URL}/auth/refresh`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      refresh_token: refreshToken,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error('Could not refresh session');
+  }
+
+  return response.json();
+}
+
+export async function logoutRequest(refreshToken: string): Promise<boolean> {
+  const response = await fetch(`${API_BASE_URL}/auth/logout`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      refresh_token: refreshToken,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error('Could not logout');
+  }
+
+  return response.json();
 }

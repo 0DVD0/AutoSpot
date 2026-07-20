@@ -1,7 +1,7 @@
 from app.models import User
 from sqlalchemy.orm import Session
 from sqlalchemy import select
-from app.schemas.userDTO import UserCreate
+from app.schemas.userDTO import UserCreate, UserProfileUpdate
 def get_user_by_id(db: Session, user_id: int) -> User | None:
 
     statement = select(User).where(User.id == user_id)
@@ -31,4 +31,17 @@ def create_user(db: Session, user_data: UserCreate, hashed_pass: str) -> User:
     db.commit()
     db.refresh(user)
 
+    return user
+
+def patch_user(db: Session, user: User, new_profile_data: UserProfileUpdate):
+    update_data = new_profile_data.model_dump(exclude_unset=True)
+
+    if "avatar_url" in update_data and update_data["avatar_url"] is not None:
+        update_data["avatar_url"] = str(update_data["avatar_url"])
+    
+    for field, value in update_data.items():
+        setattr(user, field, value)
+    
+    db.commit()
+    db.refresh(user)
     return user

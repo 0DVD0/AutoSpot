@@ -8,30 +8,35 @@ import {
   TextInput,
   View,
   KeyboardAvoidingView,
-Platform,
-Keyboard,
-TouchableWithoutFeedback,
+  Platform,
+  Keyboard,
+  TouchableWithoutFeedback,
 } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { router } from 'expo-router';
 
 import { AutoSpotColors } from '@/constants/autospotTheme';
-import { createPostComment, getPostComments } from '@/services/api';
+import { createPostComment, getPostComments, removePostComment } from '@/services/api';
 import { Comment } from '@/types/comment';
+import { useAuthenticatedApi } from '@/hooks/useAuthenticatedApi';
 
 type CommentsProps = {
   visible: boolean
   postId: number | null
   token: string | null
+  currentUserId?: number
   onClose: () => void
   onCommentCreated: (postId: number) => void
+  onCommentDeleted: (postId: number) => void
 };
 
-export function CommentModal({ visible, postId, token, onClose, onCommentCreated}: CommentsProps){
+export function CommentModal({ visible, postId, token, currentUserId, onClose, onCommentCreated, onCommentDeleted}: CommentsProps){
     const [comments, setComments] = useState<Comment[]>([])
     const [content, setContent] = useState('');
     const [isCommentsLoading, setIsCommentsLoading] = useState(true)
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [errorMessage, setErrorMessage] = useState<string | null>(null) 
+    const { authenticatedFetch } = useAuthenticatedApi();
 
 useEffect(() => {
     async function loadComments() {
@@ -72,7 +77,7 @@ useEffect(() => {
 
       const createdComment = await createPostComment(
         postId,
-        token,
+        authenticatedFetch,
         trimmedContent
       );
 
@@ -84,6 +89,31 @@ useEffect(() => {
     } finally {
       setIsSubmitting(false);
     }
+  }
+
+   async function handleDeleteComment(commentId: number) {
+    if (postId === null) {
+      return;
+    }
+
+    try {
+      setErrorMessage(null)
+
+      await removePostComment(postId, commentId, authenticatedFetch)
+
+      setComments((currentComments) => currentComments.filter((comment) => comment.id !== commentId));
+      onCommentDeleted(postId)
+    } catch {
+      setErrorMessage('Could not remove comment');
+    } 
+  }
+
+  function handleOpenUserProfile(userId: number) {
+    onClose();
+    router.push({
+      pathname: '/users/[id]',
+      params: { id: String(userId) },
+    });
   }
 
   return (
@@ -127,12 +157,30 @@ useEffect(() => {
               ListEmptyComponent={
                 <Text style={styles.stateText}>No comments yet.</Text>
               }
-              renderItem={({ item }) => (
-                <View style={styles.commentItem}>
-                  <Text style={styles.username}>@{item.user.username}</Text>
-                  <Text style={styles.commentText}>{item.content}</Text>
-                </View>
-              )}
+              renderItem={({ item }) => {
+  const isMyComment = item.user_id === currentUserId;
+
+  return (
+    <View style={styles.commentItem}>
+      <View style={styles.commentHeader}>
+        <Pressable onPress={() => handleOpenUserProfile(item.user_id)}>
+          <Text style={styles.username}>@{item.user.username}</Text>
+        </Pressable>
+
+        {isMyComment && (
+          <Pressable
+            style={styles.deleteCommentButton}
+            onPress={() => handleDeleteComment(item.id)}
+          >
+            <Ionicons name="trash-outline" size={16} color={AutoSpotColors.danger} />
+          </Pressable>
+        )}
+      </View>
+
+      <Text style={styles.commentText}>{item.content}</Text>
+    </View>
+  );
+}}
             />
           )}
 
@@ -271,4 +319,18 @@ const styles = StyleSheet.create({
   flex: 1,
   justifyContent: 'flex-end',
   },
+  deleteCommentButton: {
+  width: 28,
+  height: 28,
+  borderRadius: 14,
+  alignItems: 'center',
+  justifyContent: 'center',
+  backgroundColor: AutoSpotColors.charcoal,
+  },
+  commentHeader: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  marginBottom: 4,
+  }
 });

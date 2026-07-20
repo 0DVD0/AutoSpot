@@ -22,5 +22,5 @@ class Post(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
     expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=calculate_expiration)
     user: Mapped["User"] = relationship(back_populates="posts")
-    likes: Mapped[list["Like"]] = relationship(back_populates="post")
-    comments: Mapped[list["Comment"]] = relationship(back_populates="post")
+    likes: Mapped[list["Like"]] = relationship(back_populates="post", passive_deletes=True)
+    comments: Mapped[list["Comment"]] = relationship(back_populates="post", passive_deletes=True)

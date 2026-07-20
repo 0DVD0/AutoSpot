@@ -18,3 +18,21 @@ class UserRead(UserBase):
     model_config = {
         'from_attributes':True
     }
+
+class UserProfileRead(UserBase):
+    id: int
+    created_at: datetime
+    followers_count: int
+    following_count: int
+    groups_count: int
+    active_posts_count: int
+    is_followed_by_me: bool
+    
+    model_config = {
+        "from_attributes": True
+    }
+
+class UserProfileUpdate(BaseModel):
+    username: str | None = Field(default=None, min_length=5, max_length=20)
+    avatar_url: HttpUrl | None = None
+    bio: str | None = Field(default=None, max_length=100)

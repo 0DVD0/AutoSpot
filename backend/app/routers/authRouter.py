@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from app.db import get_db
 from app.schemas.userDTO import  UserRead, UserCreate
-from app.schemas.authDTO import TokenResponse, LoginData
+from app.schemas.authDTO import TokenResponse, LoginData, RefreshTokenRequest
 from app.services import auth_Service
 from app.dependencies import get_current_user
 from app.models.user import User
@@ -24,3 +24,14 @@ def login(login_data: LoginData, db: Session = Depends(get_db)):
 @router.get("/me", response_model=UserRead)
 def get_me(current_user: User = Depends(get_current_user)):
     return current_user
+
+@router.post("/refresh", response_model=TokenResponse)
+def refresh_token(refresh_data: RefreshTokenRequest, db:Session = Depends(get_db)):
+    return auth_Service.refresh(db, refresh_data)
+
+@router.post("/logout", response_model=bool)
+def logout(
+    refresh_data: RefreshTokenRequest,
+    db: Session = Depends(get_db),
+):
+    return auth_Service.logout(db, refresh_data)

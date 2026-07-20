@@ -8,6 +8,7 @@ import { PostCard } from '@/components/posts/PostCard';
 import { useAuth } from '@/context/AuthContext';
 import { router } from 'expo-router';
 import { CommentModal } from '@/components/posts/CommentsModal';
+import { useAuthenticatedApi } from '@/hooks/useAuthenticatedApi';
 
 export default function HomeScreen() {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -15,6 +16,7 @@ export default function HomeScreen() {
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const [refreshing, setRefreshing] = useState(false)
   const { user, token, isLoading: isAuthLoading } = useAuth();
+  const { authenticatedFetch } = useAuthenticatedApi();
   const [commentPostId, setCommentsPostId] = useState<number | null>(null)
   useFocusEffect(
   useCallback(() => {
@@ -32,7 +34,7 @@ export default function HomeScreen() {
         setIsLoading(true);
         setErrorMessage(null);
 
-        const data = await getPosts(token);
+        const data = await getPosts(authenticatedFetch);
         setPosts(data);
       } catch {
         setErrorMessage('Could not load posts from backend');
@@ -42,7 +44,7 @@ export default function HomeScreen() {
     }
 
     loadPosts();
-  }, [token, isAuthLoading])
+  }, [token, isAuthLoading, authenticatedFetch])
 );
 
   const onToggleLike = async (postId: number) => {
@@ -54,7 +56,7 @@ export default function HomeScreen() {
 
     try {
     setErrorMessage(null)
-    const LikeStatus = await likePost(postId, token);
+    const LikeStatus = await likePost(postId, authenticatedFetch);
     
     setPosts((currentPosts) => currentPosts.map((post) => post.id === LikeStatus.post_id ? {
       ...post,
@@ -79,7 +81,7 @@ export default function HomeScreen() {
     setRefreshing(true);
     setErrorMessage(null);
 
-    const data = await getPosts(token);
+    const data = await getPosts(authenticatedFetch);
     setPosts(data);
   } catch {
     setErrorMessage('Could not refresh posts');
@@ -97,6 +99,15 @@ export default function HomeScreen() {
       ...post,
       comments_count: post.comments_count + 1 } : post))
   }
+
+  function handleDeleteComment(postId: number){
+    setPosts((currentPosts) => currentPosts.map((post) => post.id === postId ? {
+      ...post,
+      comments_count: Math.max(post.comments_count - 1,  0),
+    }
+  : post
+))
+  }
   async function handleDeletePost(postId: number) {
     if(!token) {
       setErrorMessage('You must be logged in to manage posts');
@@ -105,7 +116,7 @@ export default function HomeScreen() {
   
     try {
       setErrorMessage(null);
-      await deleteUserPost(postId, token);
+      await deleteUserPost(postId, authenticatedFetch);
 
       setPosts((currentPosts) => currentPosts.filter((post) => post.id !== postId));
     } catch {
@@ -147,8 +158,10 @@ export default function HomeScreen() {
         visible={commentPostId !== null}
         postId={commentPostId}
         token={token}
+        currentUserId={user?.id}
         onClose={() => setCommentsPostId(null)}
         onCommentCreated={handleCommentCreated}
+        onCommentDeleted={handleDeleteComment}
       />
     </View>
   );

@@ -1,7 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
+from app.schemas.postDTO import PostRead
 from app.db import get_db
-from app.schemas.userDTO import  UserRead, UserCreate
+from app.schemas.userDTO import  UserProfileUpdate, UserRead, UserCreate, UserProfileRead
 from app.schemas.followDTO import FollowStatus
 from app.models.user import User
 from app.services import user_Service
@@ -36,3 +37,27 @@ def follow_user(user_id: int, db: Session = Depends(get_db), current_user: User 
 def unfollow_user(user_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     unfollow = user_Service.unfollow_user(db, user_id, current_user )
     return unfollow
+
+@router.get("/{user_id}/follow-status", response_model=FollowStatus)
+def get_follow_status(user_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    status = user_Service.build_follow_status(db, user_id, current_user.id)
+    return status
+
+@router.get("/{user_id}/posts", response_model=list[PostRead])
+def get_user_posts(
+    user_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    return user_Service.get_user_posts(db, user_id, current_user)
+
+@router.get("/{user_id}/profile", response_model=UserProfileRead)
+def get_user_profile(user_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    profile = user_Service.build_user_profile(db, user_id, current_user)
+    return profile
+
+@router.patch("/me/profile", response_model=UserRead)
+def update_user_profile(new_profile_data: UserProfileUpdate, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    user = user_Service.update_user(db, current_user, new_profile_data)
+
+    return user

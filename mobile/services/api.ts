@@ -1,5 +1,6 @@
 import { Comment } from "@/types/comment";
 import { Post } from "@/types/post";
+import type { AuthenticatedFetch } from "@/hooks/useAuthenticatedApi";
 
 export const API_BASE_URL = 'http://192.168.100.11:8000';
 
@@ -18,12 +19,8 @@ type LikeStatus = {
     likes_count: number;
     is_liked_by_me: boolean;
 }
-export async function getPosts(token: string) {
-    const response = await fetch(`${API_BASE_URL}/posts`, {
-        headers: {
-            Authorization: `Bearer ${token}`
-        }
-    });
+export async function getPosts(authenticatedFetch: AuthenticatedFetch): Promise<Post[]> {
+    const response = await authenticatedFetch(`${API_BASE_URL}/posts`);
 
     if (!response.ok) {
         throw new Error('Failed to fetch posts');
@@ -32,12 +29,11 @@ export async function getPosts(token: string) {
     return response.json();
 }
 
-export async function createPost(token: string, data: PostCreation ): Promise<Post> {
-    const response = await fetch(`${API_BASE_URL}/posts`,{
+export async function createPost(authenticatedFetch: AuthenticatedFetch, data: PostCreation ): Promise<Post> {
+    const response = await authenticatedFetch(`${API_BASE_URL}/posts`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            Authorization: `Bearer ${token}`
         },
         body: JSON.stringify(data),
     }
@@ -49,12 +45,9 @@ export async function createPost(token: string, data: PostCreation ): Promise<Po
     return response.json()
 }
 
-export async function deleteUserPost(postId: number, token: string): Promise<boolean> {
-    const response = await fetch(`${API_BASE_URL}/posts/${postId}`, {
+export async function deleteUserPost(postId: number, authenticatedFetch: AuthenticatedFetch): Promise<boolean> {
+    const response = await authenticatedFetch(`${API_BASE_URL}/posts/${postId}`, {
         method: 'DELETE',
-        headers: {
-            Authorization: `Bearer ${token}`,
-        }
     });
 
     if (!response.ok){
@@ -64,12 +57,9 @@ export async function deleteUserPost(postId: number, token: string): Promise<boo
     return response.json();
 }
 
-export async function likePost(postId: number, token: string): Promise<LikeStatus> {
-    const response = await fetch(`${API_BASE_URL}/posts/${postId}/like`,{
+export async function likePost(postId: number, authenticatedFetch: AuthenticatedFetch): Promise<LikeStatus> {
+    const response = await authenticatedFetch(`${API_BASE_URL}/posts/${postId}/like`,{
         method: 'POST',
-        headers: {
-            Authorization: `Bearer ${token}` 
-        }
     }
     )
 
@@ -89,12 +79,11 @@ export async function getPostComments(postId: number): Promise<Comment[]> {
     return response.json();
 }
 
-export async function createPostComment(postId: number, token: string, content: string): Promise<Comment> {
-    const response = await fetch(`${API_BASE_URL}/posts/${postId}/comments`,{
+export async function createPostComment(postId: number, authenticatedFetch: AuthenticatedFetch, content: string): Promise<Comment> {
+    const response = await authenticatedFetch(`${API_BASE_URL}/posts/${postId}/comments`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            Authorization: `Bearer ${token}`
         },
         
         body: JSON.stringify({
@@ -107,4 +96,16 @@ export async function createPostComment(postId: number, token: string, content: 
         throw new Error('Failed to create comment')
     }
     return response.json()
+}
+
+export async function removePostComment(postId: number, commentId: number, authenticatedFetch: AuthenticatedFetch): Promise<boolean> {
+    const response = await authenticatedFetch(`${API_BASE_URL}/posts/${postId}/comments/${commentId}`, {
+        method: 'DELETE',
+    });
+
+    if (!response.ok){
+        throw new Error('Failed to remove comment')
+    }
+
+    return response.json();
 }

@@ -1,5 +1,5 @@
 from datetime import datetime, timezone
-from sqlalchemy import select, delete, update
+from sqlalchemy import func, select, delete, update
 from sqlalchemy.orm import Session, selectinload
 from app.models.post import Post
 from app.schemas.postDTO import PostCreate
@@ -57,3 +57,22 @@ def get_post(post_id: int, db: Session, now: datetime) -> Post | None:
     post = db.scalars(statement).first()
 
     return post
+
+def get_posts_by_user_id(db: Session, user_id: int, now: datetime) -> list[Post]:
+    statement = (
+        select(Post).options(selectinload(Post.user)).where(Post.user_id == user_id).where(Post.expires_at >  now).where(Post.is_active.is_(True)).order_by(Post.created_at.desc())
+    )
+
+    posts = list(db.scalars(statement).all())
+    return posts
+
+def count_user_posts(db: Session, user_id: int, now: datetime) -> int:
+    statement = (
+        select(func.count())
+        .select_from(Post)
+        .where(Post.user_id == user_id)
+        .where(Post.is_active.is_(True))
+        .where(Post.expires_at > now)
+    )
+
+    return db.scalar(statement) or 0

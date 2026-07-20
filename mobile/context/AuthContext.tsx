@@ -1,7 +1,7 @@
 import { createContext, PropsWithChildren, useContext, useEffect, useState } from 'react';
 
-import { AuthUser, getMeRequest, loginRequest, LoginRequest } from '@/services/authAPI';
-import { deleteToken, getToken, saveToken } from '@/services/tokenStorage';
+import { AuthUser, getMeRequest, loginRequest, LoginRequest, logoutRequest, refreshTokenRequest } from '@/services/authAPI';
+import { deleteTokens, getAccessToken, getRefreshToken, saveTokens } from '@/services/tokenStorage';
 
 type AuthContextValue = {
   user: AuthUser | null;
@@ -9,6 +9,7 @@ type AuthContextValue = {
   isLoading: boolean;
   login: (data: LoginRequest) => Promise<void>;
   logout: () => Promise<void>;
+  refreshSession: () => Promise<string | null>;
 };
 
 const AuthContext = createContext<AuthContextValue | null>(null);
@@ -20,33 +21,73 @@ export function AuthProvider({ children }: PropsWithChildren) {
 
   useEffect(() => {
     async function loadSession() {
-      try {
-        const storedToken = await getToken();
+  try {
+    const storedAccessToken = await getAccessToken();
+    const storedRefreshToken = await getRefreshToken();
 
-        if (!storedToken) {
-          return;
-        }
-
-        const currentUser = await getMeRequest(storedToken);
-
-        setToken(storedToken);
-        setUser(currentUser);
-      } catch {
-        await deleteToken();
-        setToken(null);
-        setUser(null);
-      } finally {
-        setIsLoading(false);
-      }
+    if (!storedAccessToken || !storedRefreshToken) {
+      return;
     }
 
+    try {
+      const currentUser = await getMeRequest(storedAccessToken);
+
+      setToken(storedAccessToken);
+      setUser(currentUser);
+    } catch {
+      const newTokens = await refreshTokenRequest(storedRefreshToken);
+
+      await saveTokens(newTokens.access_token, newTokens.refresh_token);
+
+      const currentUser = await getMeRequest(newTokens.access_token);
+
+      setToken(newTokens.access_token);
+      setUser(currentUser);
+    }
+  } catch {
+    await deleteTokens();
+    setToken(null);
+    setUser(null);
+  } finally {
+    setIsLoading(false);
+  }
+}
     loadSession();
   }, []);
 
+  async function refreshSession(): Promise<string | null> {
+  try {
+    const storedRefreshToken = await getRefreshToken();
+
+    if (!storedRefreshToken) {
+      await deleteTokens();
+      setToken(null);
+      setUser(null);
+      return null;
+    }
+
+    const newTokens = await refreshTokenRequest(storedRefreshToken);
+
+    await saveTokens(newTokens.access_token, newTokens.refresh_token);
+
+    const currentUser = await getMeRequest(newTokens.access_token);
+
+    setToken(newTokens.access_token);
+    setUser(currentUser);
+
+    return newTokens.access_token;
+  } catch {
+    await deleteTokens();
+    setToken(null);
+    setUser(null);
+
+    return null;
+  }
+}
   async function login(data: LoginRequest) {
     const tokenResponse = await loginRequest(data);
 
-    await saveToken(tokenResponse.access_token);
+    await saveTokens(tokenResponse.access_token, tokenResponse.refresh_token);
 
     const currentUser = await getMeRequest(tokenResponse.access_token);
 
@@ -55,14 +96,24 @@ export function AuthProvider({ children }: PropsWithChildren) {
   }
 
   async function logout() {
-    await deleteToken();
+  try {
+    const storedRefreshToken = await getRefreshToken();
+
+    if (storedRefreshToken) {
+      await logoutRequest(storedRefreshToken);
+    }
+  } catch {
+    // Even if backend logout fails, local logout should still happen.
+  } finally {
+    await deleteTokens();
 
     setToken(null);
     setUser(null);
   }
+}
 
   return (
-    <AuthContext.Provider value={{ user, token, isLoading, login, logout }}>
+    <AuthContext.Provider value={{ user, token, isLoading, login, logout, refreshSession }}>
       {children}
     </AuthContext.Provider>
   );

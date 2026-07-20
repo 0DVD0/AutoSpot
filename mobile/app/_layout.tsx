@@ -20,6 +20,8 @@ export default function RootLayout() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="auth" options={{headerShown: false}} />
         <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
+        <Stack.Screen name="settings" options={{title:'Settings', headerShown: true}} />
+        <Stack.Screen name="edit-profile" options={{title:'Edit profile', headerShown: true}} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

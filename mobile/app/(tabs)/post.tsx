@@ -5,9 +5,11 @@ import { useState } from 'react';
 import { createPost } from '@/services/api';
 import { useAuth } from '@/context/AuthContext';
 import { AutoSpotColors } from '@/constants/autospotTheme';
+import { useAuthenticatedApi } from '@/hooks/useAuthenticatedApi';
 
 export default function PostScreen() {
   const { token } = useAuth();
+  const { authenticatedFetch } = useAuthenticatedApi();
 
   const [imageUrl, setImageUrl] = useState('');
   const [brand, setBrand] = useState('');
@@ -25,7 +27,7 @@ export default function PostScreen() {
     try {
       setErrorMessage(null);
       setIsSubmitting(true);
-      await createPost(token, {
+      await createPost(authenticatedFetch, {
       image_url: imageUrl,
       brand: brand || null,
       model: model || null,
