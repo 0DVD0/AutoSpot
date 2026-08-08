@@ -1,4 +1,6 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from typing import Annotated
+
+from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
 from sqlalchemy.orm import Session
 from app.schemas.postDTO import PostRead
 from app.db import get_db
@@ -56,8 +58,17 @@ def get_user_profile(user_id: int, db: Session = Depends(get_db), current_user: 
     profile = user_Service.build_user_profile(db, user_id, current_user)
     return profile
 
+@router.put("/me/avatar", response_model=UserRead)
+def update_my_avatar(file: Annotated[UploadFile, File()], db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    return user_Service.update_user_avatar(db, current_user, file)
+
+@router.delete("/me/avatar", response_model=UserRead)
+def delete_avatar(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    return user_Service.remove_user_avatar(db, current_user)
+
 @router.patch("/me/profile", response_model=UserRead)
 def update_user_profile(new_profile_data: UserProfileUpdate, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     user = user_Service.update_user(db, current_user, new_profile_data)
 
     return user
+

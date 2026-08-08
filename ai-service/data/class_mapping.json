@@ -1,0 +1,5210 @@
+{
+  "0": {
+    "brand_id": 139,
+    "model_id": 1639,
+    "brand": "Acura",
+    "model": "ILX"
+  },
+  "1": {
+    "brand_id": 139,
+    "model_id": 1640,
+    "brand": "Acura",
+    "model": "MDX"
+  },
+  "2": {
+    "brand_id": 139,
+    "model_id": 1646,
+    "brand": "Acura",
+    "model": "NSX"
+  },
+  "3": {
+    "brand_id": 139,
+    "model_id": 1641,
+    "brand": "Acura",
+    "model": "RDX"
+  },
+  "4": {
+    "brand_id": 139,
+    "model_id": 1642,
+    "brand": "Acura",
+    "model": "RL"
+  },
+  "5": {
+    "brand_id": 139,
+    "model_id": 1643,
+    "brand": "Acura",
+    "model": "RLX"
+  },
+  "6": {
+    "brand_id": 139,
+    "model_id": 1644,
+    "brand": "Acura",
+    "model": "TL"
+  },
+  "7": {
+    "brand_id": 139,
+    "model_id": 1648,
+    "brand": "Acura",
+    "model": "TLX"
+  },
+  "8": {
+    "brand_id": 139,
+    "model_id": 1645,
+    "brand": "Acura",
+    "model": "ZDX"
+  },
+  "9": {
+    "brand_id": 153,
+    "model_id": 1749,
+    "brand": "Alfa Romeo",
+    "model": "4C"
+  },
+  "10": {
+    "brand_id": 153,
+    "model_id": 1756,
+    "brand": "Alfa Romeo",
+    "model": "8C"
+  },
+  "11": {
+    "brand_id": 153,
+    "model_id": 1752,
+    "brand": "Alfa Romeo",
+    "model": "Disco Volante"
+  },
+  "12": {
+    "brand_id": 153,
+    "model_id": 1748,
+    "brand": "Alfa Romeo",
+    "model": "Giulietta"
+  },
+  "13": {
+    "brand_id": 153,
+    "model_id": 1746,
+    "brand": "Alfa Romeo",
+    "model": "MiTo"
+  },
+  "14": {
+    "brand_id": 154,
+    "model_id": 1059,
+    "brand": "Aston Martin",
+    "model": "Cygnet"
+  },
+  "15": {
+    "brand_id": 154,
+    "model_id": 1051,
+    "brand": "Aston Martin",
+    "model": "DB9"
+  },
+  "16": {
+    "brand_id": 154,
+    "model_id": 1063,
+    "brand": "Aston Martin",
+    "model": "DBS"
+  },
+  "17": {
+    "brand_id": 154,
+    "model_id": 1060,
+    "brand": "Aston Martin",
+    "model": "Lagonda"
+  },
+  "18": {
+    "brand_id": 154,
+    "model_id": 1058,
+    "brand": "Aston Martin",
+    "model": "ONE-77"
+  },
+  "19": {
+    "brand_id": 154,
+    "model_id": 1052,
+    "brand": "Aston Martin",
+    "model": "Rapide"
+  },
+  "20": {
+    "brand_id": 154,
+    "model_id": 1053,
+    "brand": "Aston Martin",
+    "model": "V12 Vantage"
+  },
+  "21": {
+    "brand_id": 154,
+    "model_id": 1054,
+    "brand": "Aston Martin",
+    "model": "V8 Vantage"
+  },
+  "22": {
+    "brand_id": 154,
+    "model_id": 1055,
+    "brand": "Aston Martin",
+    "model": "Vanquish"
+  },
+  "23": {
+    "brand_id": 154,
+    "model_id": 1056,
+    "brand": "Aston Martin",
+    "model": "Virage"
+  },
+  "24": {
+    "brand_id": 78,
+    "model_id": 19,
+    "brand": "Audi",
+    "model": "A1"
+  },
+  "25": {
+    "brand_id": 78,
+    "model_id": 1,
+    "brand": "Audi",
+    "model": "A3 hatchback"
+  },
+  "26": {
+    "brand_id": 78,
+    "model_id": 11,
+    "brand": "Audi",
+    "model": "A3 sedan"
+  },
+  "27": {
+    "brand_id": 78,
+    "model_id": 2,
+    "brand": "Audi",
+    "model": "A4L"
+  },
+  "28": {
+    "brand_id": 78,
+    "model_id": 22,
+    "brand": "Audi",
+    "model": "A5 convertible"
+  },
+  "29": {
+    "brand_id": 78,
+    "model_id": 23,
+    "brand": "Audi",
+    "model": "A5 coupe"
+  },
+  "30": {
+    "brand_id": 78,
+    "model_id": 24,
+    "brand": "Audi",
+    "model": "A5 hatchback"
+  },
+  "31": {
+    "brand_id": 78,
+    "model_id": 9,
+    "brand": "Audi",
+    "model": "A6"
+  },
+  "32": {
+    "brand_id": 78,
+    "model_id": 3,
+    "brand": "Audi",
+    "model": "A6L"
+  },
+  "33": {
+    "brand_id": 78,
+    "model_id": 26,
+    "brand": "Audi",
+    "model": "A7"
+  },
+  "34": {
+    "brand_id": 78,
+    "model_id": 27,
+    "brand": "Audi",
+    "model": "A8L"
+  },
+  "35": {
+    "brand_id": 78,
+    "model_id": 61,
+    "brand": "Audi",
+    "model": "Crosslane Coupe"
+  },
+  "36": {
+    "brand_id": 78,
+    "model_id": 50,
+    "brand": "Audi",
+    "model": "e-tron"
+  },
+  "37": {
+    "brand_id": 78,
+    "model_id": 4,
+    "brand": "Audi",
+    "model": "Q3"
+  },
+  "38": {
+    "brand_id": 78,
+    "model_id": 5,
+    "brand": "Audi",
+    "model": "Q5"
+  },
+  "39": {
+    "brand_id": 78,
+    "model_id": 32,
+    "brand": "Audi",
+    "model": "Q7"
+  },
+  "40": {
+    "brand_id": 78,
+    "model_id": 47,
+    "brand": "Audi",
+    "model": "quattro"
+  },
+  "41": {
+    "brand_id": 78,
+    "model_id": 53,
+    "brand": "Audi",
+    "model": "R18"
+  },
+  "42": {
+    "brand_id": 78,
+    "model_id": 33,
+    "brand": "Audi",
+    "model": "R8"
+  },
+  "43": {
+    "brand_id": 78,
+    "model_id": 15,
+    "brand": "Audi",
+    "model": "RS Q3"
+  },
+  "44": {
+    "brand_id": 78,
+    "model_id": 16,
+    "brand": "Audi",
+    "model": "RS3"
+  },
+  "45": {
+    "brand_id": 78,
+    "model_id": 14,
+    "brand": "Audi",
+    "model": "RS4"
+  },
+  "46": {
+    "brand_id": 78,
+    "model_id": 12,
+    "brand": "Audi",
+    "model": "RS5"
+  },
+  "47": {
+    "brand_id": 78,
+    "model_id": 18,
+    "brand": "Audi",
+    "model": "RS6"
+  },
+  "48": {
+    "brand_id": 78,
+    "model_id": 13,
+    "brand": "Audi",
+    "model": "RS7"
+  },
+  "49": {
+    "brand_id": 78,
+    "model_id": 57,
+    "brand": "Audi",
+    "model": "S1"
+  },
+  "50": {
+    "brand_id": 78,
+    "model_id": 62,
+    "brand": "Audi",
+    "model": "S3 sedan"
+  },
+  "51": {
+    "brand_id": 78,
+    "model_id": 63,
+    "brand": "Audi",
+    "model": "S4"
+  },
+  "52": {
+    "brand_id": 78,
+    "model_id": 34,
+    "brand": "Audi",
+    "model": "S5 convertible"
+  },
+  "53": {
+    "brand_id": 78,
+    "model_id": 35,
+    "brand": "Audi",
+    "model": "S5 coupe"
+  },
+  "54": {
+    "brand_id": 78,
+    "model_id": 38,
+    "brand": "Audi",
+    "model": "S7"
+  },
+  "55": {
+    "brand_id": 78,
+    "model_id": 39,
+    "brand": "Audi",
+    "model": "S8"
+  },
+  "56": {
+    "brand_id": 78,
+    "model_id": 40,
+    "brand": "Audi",
+    "model": "SQ5"
+  },
+  "57": {
+    "brand_id": 78,
+    "model_id": 44,
+    "brand": "Audi",
+    "model": "TT coupe"
+  },
+  "58": {
+    "brand_id": 78,
+    "model_id": 17,
+    "brand": "Audi",
+    "model": "TT RS"
+  },
+  "59": {
+    "brand_id": 78,
+    "model_id": 42,
+    "brand": "Audi",
+    "model": "TTS coupe"
+  },
+  "60": {
+    "brand_id": 83,
+    "model_id": 373,
+    "brand": "Bentley",
+    "model": "Arnage"
+  },
+  "61": {
+    "brand_id": 83,
+    "model_id": 372,
+    "brand": "Bentley",
+    "model": "Brooklands"
+  },
+  "62": {
+    "brand_id": 83,
+    "model_id": 368,
+    "brand": "Bentley",
+    "model": "Flying Spur"
+  },
+  "63": {
+    "brand_id": 83,
+    "model_id": 374,
+    "brand": "Bentley",
+    "model": "Mulsanne"
+  },
+  "64": {
+    "brand_id": 83,
+    "model_id": 369,
+    "brand": "Bentley",
+    "model": "Super Sport"
+  },
+  "65": {
+    "brand_id": 81,
+    "model_id": 83,
+    "brand": "BMW",
+    "model": "1 Series couple"
+  },
+  "66": {
+    "brand_id": 81,
+    "model_id": 118,
+    "brand": "BMW",
+    "model": "1 Series hatchback"
+  },
+  "67": {
+    "brand_id": 81,
+    "model_id": 71,
+    "brand": "BMW",
+    "model": "1 Series M"
+  },
+  "68": {
+    "brand_id": 81,
+    "model_id": 84,
+    "brand": "BMW",
+    "model": "2 Series"
+  },
+  "69": {
+    "brand_id": 81,
+    "model_id": 122,
+    "brand": "BMW",
+    "model": "2 Series Active Tourer"
+  },
+  "70": {
+    "brand_id": 81,
+    "model_id": 68,
+    "brand": "BMW",
+    "model": "3 Series"
+  },
+  "71": {
+    "brand_id": 81,
+    "model_id": 86,
+    "brand": "BMW",
+    "model": "3 Series convertible"
+  },
+  "72": {
+    "brand_id": 81,
+    "model_id": 89,
+    "brand": "BMW",
+    "model": "3 Series coupe"
+  },
+  "73": {
+    "brand_id": 81,
+    "model_id": 88,
+    "brand": "BMW",
+    "model": "3 Series estate"
+  },
+  "74": {
+    "brand_id": 81,
+    "model_id": 85,
+    "brand": "BMW",
+    "model": "3 Series GT"
+  },
+  "75": {
+    "brand_id": 81,
+    "model_id": 91,
+    "brand": "BMW",
+    "model": "4 Series convertible"
+  },
+  "76": {
+    "brand_id": 81,
+    "model_id": 92,
+    "brand": "BMW",
+    "model": "4 Series couple"
+  },
+  "77": {
+    "brand_id": 81,
+    "model_id": 70,
+    "brand": "BMW",
+    "model": "5 Series"
+  },
+  "78": {
+    "brand_id": 81,
+    "model_id": 96,
+    "brand": "BMW",
+    "model": "5 Series estate"
+  },
+  "79": {
+    "brand_id": 81,
+    "model_id": 94,
+    "brand": "BMW",
+    "model": "5 Series GT"
+  },
+  "80": {
+    "brand_id": 81,
+    "model_id": 100,
+    "brand": "BMW",
+    "model": "6 Series"
+  },
+  "81": {
+    "brand_id": 81,
+    "model_id": 98,
+    "brand": "BMW",
+    "model": "6 Series convertible"
+  },
+  "82": {
+    "brand_id": 81,
+    "model_id": 99,
+    "brand": "BMW",
+    "model": "6 Series couple"
+  },
+  "83": {
+    "brand_id": 81,
+    "model_id": 101,
+    "brand": "BMW",
+    "model": "7 Series"
+  },
+  "84": {
+    "brand_id": 81,
+    "model_id": 114,
+    "brand": "BMW",
+    "model": "Active Tourer"
+  },
+  "85": {
+    "brand_id": 81,
+    "model_id": 112,
+    "brand": "BMW",
+    "model": "ConnectedDrive"
+  },
+  "86": {
+    "brand_id": 81,
+    "model_id": 113,
+    "brand": "BMW",
+    "model": "EfficientDynamics"
+  },
+  "87": {
+    "brand_id": 81,
+    "model_id": 109,
+    "brand": "BMW",
+    "model": "i3"
+  },
+  "88": {
+    "brand_id": 81,
+    "model_id": 110,
+    "brand": "BMW",
+    "model": "i8"
+  },
+  "89": {
+    "brand_id": 81,
+    "model_id": 72,
+    "brand": "BMW",
+    "model": "M3 coupe"
+  },
+  "90": {
+    "brand_id": 81,
+    "model_id": 74,
+    "brand": "BMW",
+    "model": "M4 coupe"
+  },
+  "91": {
+    "brand_id": 81,
+    "model_id": 75,
+    "brand": "BMW",
+    "model": "M5"
+  },
+  "92": {
+    "brand_id": 81,
+    "model_id": 69,
+    "brand": "BMW",
+    "model": "X1"
+  },
+  "93": {
+    "brand_id": 81,
+    "model_id": 103,
+    "brand": "BMW",
+    "model": "X3"
+  },
+  "94": {
+    "brand_id": 81,
+    "model_id": 104,
+    "brand": "BMW",
+    "model": "X4"
+  },
+  "95": {
+    "brand_id": 81,
+    "model_id": 105,
+    "brand": "BMW",
+    "model": "X5"
+  },
+  "96": {
+    "brand_id": 81,
+    "model_id": 78,
+    "brand": "BMW",
+    "model": "X5 M"
+  },
+  "97": {
+    "brand_id": 81,
+    "model_id": 106,
+    "brand": "BMW",
+    "model": "X6"
+  },
+  "98": {
+    "brand_id": 81,
+    "model_id": 79,
+    "brand": "BMW",
+    "model": "X6 M"
+  },
+  "99": {
+    "brand_id": 81,
+    "model_id": 108,
+    "brand": "BMW",
+    "model": "Z4"
+  },
+  "100": {
+    "brand_id": 81,
+    "model_id": 119,
+    "brand": "BMW",
+    "model": "Zagato Coupe"
+  },
+  "101": {
+    "brand_id": 84,
+    "model_id": 1966,
+    "brand": "Brabus",
+    "model": "CLS Class"
+  },
+  "102": {
+    "brand_id": 84,
+    "model_id": 1975,
+    "brand": "Brabus",
+    "model": "E Class"
+  },
+  "103": {
+    "brand_id": 84,
+    "model_id": 1970,
+    "brand": "Brabus",
+    "model": "G Class"
+  },
+  "104": {
+    "brand_id": 84,
+    "model_id": 1964,
+    "brand": "Brabus",
+    "model": "M Class"
+  },
+  "105": {
+    "brand_id": 84,
+    "model_id": 1962,
+    "brand": "Brabus",
+    "model": "S Class"
+  },
+  "106": {
+    "brand_id": 84,
+    "model_id": 1971,
+    "brand": "Brabus",
+    "model": "SLK Class"
+  },
+  "107": {
+    "brand_id": 84,
+    "model_id": 1965,
+    "brand": "Brabus",
+    "model": "smart fortwo"
+  },
+  "108": {
+    "brand_id": 85,
+    "model_id": 375,
+    "brand": "Bugatti",
+    "model": "Veyron"
+  },
+  "109": {
+    "brand_id": 54,
+    "model_id": 202,
+    "brand": "Buick",
+    "model": "Enclave"
+  },
+  "110": {
+    "brand_id": 54,
+    "model_id": 187,
+    "brand": "Buick",
+    "model": "encore"
+  },
+  "111": {
+    "brand_id": 54,
+    "model_id": 201,
+    "brand": "Buick",
+    "model": "Envision"
+  },
+  "112": {
+    "brand_id": 54,
+    "model_id": 196,
+    "brand": "Buick",
+    "model": "EXCELLE  GT"
+  },
+  "113": {
+    "brand_id": 54,
+    "model_id": 197,
+    "brand": "Buick",
+    "model": "EXCELLE  XT"
+  },
+  "114": {
+    "brand_id": 54,
+    "model_id": 194,
+    "brand": "Buick",
+    "model": "Exclle"
+  },
+  "115": {
+    "brand_id": 54,
+    "model_id": 189,
+    "brand": "Buick",
+    "model": "GL8 Business"
+  },
+  "116": {
+    "brand_id": 54,
+    "model_id": 188,
+    "brand": "Buick",
+    "model": "GL8 Luxury Business"
+  },
+  "117": {
+    "brand_id": 54,
+    "model_id": 192,
+    "brand": "Buick",
+    "model": "Lacrosse"
+  },
+  "118": {
+    "brand_id": 54,
+    "model_id": 195,
+    "brand": "Buick",
+    "model": "Park Avenue"
+  },
+  "119": {
+    "brand_id": 54,
+    "model_id": 190,
+    "brand": "Buick",
+    "model": "Regal"
+  },
+  "120": {
+    "brand_id": 54,
+    "model_id": 191,
+    "brand": "Buick",
+    "model": "Regal GS"
+  },
+  "121": {
+    "brand_id": 54,
+    "model_id": 200,
+    "brand": "Buick",
+    "model": "Riviera"
+  },
+  "122": {
+    "brand_id": 105,
+    "model_id": 306,
+    "brand": "BYD",
+    "model": "e6"
+  },
+  "123": {
+    "brand_id": 105,
+    "model_id": 294,
+    "brand": "BYD",
+    "model": "F0"
+  },
+  "124": {
+    "brand_id": 105,
+    "model_id": 314,
+    "brand": "BYD",
+    "model": "F3"
+  },
+  "125": {
+    "brand_id": 105,
+    "model_id": 296,
+    "brand": "BYD",
+    "model": "F3R"
+  },
+  "126": {
+    "brand_id": 105,
+    "model_id": 297,
+    "brand": "BYD",
+    "model": "F6"
+  },
+  "127": {
+    "brand_id": 105,
+    "model_id": 298,
+    "brand": "BYD",
+    "model": "G3"
+  },
+  "128": {
+    "brand_id": 105,
+    "model_id": 299,
+    "brand": "BYD",
+    "model": "G3R"
+  },
+  "129": {
+    "brand_id": 105,
+    "model_id": 300,
+    "brand": "BYD",
+    "model": "G5"
+  },
+  "130": {
+    "brand_id": 105,
+    "model_id": 301,
+    "brand": "BYD",
+    "model": "G6"
+  },
+  "131": {
+    "brand_id": 105,
+    "model_id": 302,
+    "brand": "BYD",
+    "model": "L3"
+  },
+  "132": {
+    "brand_id": 105,
+    "model_id": 303,
+    "brand": "BYD",
+    "model": "M6"
+  },
+  "133": {
+    "brand_id": 105,
+    "model_id": 307,
+    "brand": "BYD",
+    "model": "Qin"
+  },
+  "134": {
+    "brand_id": 105,
+    "model_id": 304,
+    "brand": "BYD",
+    "model": "S6"
+  },
+  "135": {
+    "brand_id": 105,
+    "model_id": 305,
+    "brand": "BYD",
+    "model": "S7"
+  },
+  "136": {
+    "brand_id": 105,
+    "model_id": 308,
+    "brand": "BYD",
+    "model": "Si Rui"
+  },
+  "137": {
+    "brand_id": 105,
+    "model_id": 309,
+    "brand": "BYD",
+    "model": "Su Rui"
+  },
+  "138": {
+    "brand_id": 53,
+    "model_id": 767,
+    "brand": "Cadillac",
+    "model": "ATS"
+  },
+  "139": {
+    "brand_id": 53,
+    "model_id": 766,
+    "brand": "Cadillac",
+    "model": "ATS-L"
+  },
+  "140": {
+    "brand_id": 53,
+    "model_id": 765,
+    "brand": "Cadillac",
+    "model": "CTS"
+  },
+  "141": {
+    "brand_id": 53,
+    "model_id": 776,
+    "brand": "Cadillac",
+    "model": "ELR"
+  },
+  "142": {
+    "brand_id": 53,
+    "model_id": 771,
+    "brand": "Cadillac",
+    "model": "Escalade"
+  },
+  "143": {
+    "brand_id": 53,
+    "model_id": 763,
+    "brand": "Cadillac",
+    "model": "Seville SLS"
+  },
+  "144": {
+    "brand_id": 53,
+    "model_id": 770,
+    "brand": "Cadillac",
+    "model": "SRX"
+  },
+  "145": {
+    "brand_id": 53,
+    "model_id": 764,
+    "brand": "Cadillac",
+    "model": "XTS"
+  },
+  "146": {
+    "brand_id": 75,
+    "model_id": 1655,
+    "brand": "Chery",
+    "model": "A1"
+  },
+  "147": {
+    "brand_id": 75,
+    "model_id": 1656,
+    "brand": "Chery",
+    "model": "A3 hatchback"
+  },
+  "148": {
+    "brand_id": 75,
+    "model_id": 1657,
+    "brand": "Chery",
+    "model": "A3 sedan"
+  },
+  "149": {
+    "brand_id": 75,
+    "model_id": 1658,
+    "brand": "Chery",
+    "model": "A5"
+  },
+  "150": {
+    "brand_id": 75,
+    "model_id": 1683,
+    "brand": "Chery",
+    "model": "Arrizo 7"
+  },
+  "151": {
+    "brand_id": 75,
+    "model_id": 1667,
+    "brand": "Chery",
+    "model": "Cowin 1"
+  },
+  "152": {
+    "brand_id": 75,
+    "model_id": 1668,
+    "brand": "Chery",
+    "model": "Cowin 2"
+  },
+  "153": {
+    "brand_id": 75,
+    "model_id": 1669,
+    "brand": "Chery",
+    "model": "Cowin 3"
+  },
+  "154": {
+    "brand_id": 75,
+    "model_id": 1670,
+    "brand": "Chery",
+    "model": "Cowin 5"
+  },
+  "155": {
+    "brand_id": 75,
+    "model_id": 1659,
+    "brand": "Chery",
+    "model": "E3"
+  },
+  "156": {
+    "brand_id": 75,
+    "model_id": 1660,
+    "brand": "Chery",
+    "model": "E5"
+  },
+  "157": {
+    "brand_id": 75,
+    "model_id": 1651,
+    "brand": "Chery",
+    "model": "Eastar"
+  },
+  "158": {
+    "brand_id": 75,
+    "model_id": 1652,
+    "brand": "Chery",
+    "model": "Eastar Cross"
+  },
+  "159": {
+    "brand_id": 75,
+    "model_id": 1653,
+    "brand": "Chery",
+    "model": "Fulwin 2 hatchback"
+  },
+  "160": {
+    "brand_id": 75,
+    "model_id": 1654,
+    "brand": "Chery",
+    "model": "Fulwin 2 sedan"
+  },
+  "161": {
+    "brand_id": 75,
+    "model_id": 1661,
+    "brand": "Chery",
+    "model": "QQ"
+  },
+  "162": {
+    "brand_id": 75,
+    "model_id": 1662,
+    "brand": "Chery",
+    "model": "QQ3"
+  },
+  "163": {
+    "brand_id": 75,
+    "model_id": 1664,
+    "brand": "Chery",
+    "model": "QQme"
+  },
+  "164": {
+    "brand_id": 75,
+    "model_id": 1671,
+    "brand": "Chery",
+    "model": "Tiggo"
+  },
+  "165": {
+    "brand_id": 75,
+    "model_id": 1672,
+    "brand": "Chery",
+    "model": "Tiggo 3"
+  },
+  "166": {
+    "brand_id": 75,
+    "model_id": 1673,
+    "brand": "Chery",
+    "model": "Tiggo 5"
+  },
+  "167": {
+    "brand_id": 75,
+    "model_id": 1665,
+    "brand": "Chery",
+    "model": "X1"
+  },
+  "168": {
+    "brand_id": 157,
+    "model_id": 1911,
+    "brand": "Chevy",
+    "model": "Aveo"
+  },
+  "169": {
+    "brand_id": 157,
+    "model_id": 1905,
+    "brand": "Chevy",
+    "model": "AVEO hatchback"
+  },
+  "170": {
+    "brand_id": 157,
+    "model_id": 1917,
+    "brand": "Chevy",
+    "model": "Aveo sedan"
+  },
+  "171": {
+    "brand_id": 157,
+    "model_id": 1946,
+    "brand": "Chevy",
+    "model": "Camaro"
+  },
+  "172": {
+    "brand_id": 157,
+    "model_id": 1910,
+    "brand": "Chevy",
+    "model": "Captiva"
+  },
+  "173": {
+    "brand_id": 157,
+    "model_id": 1933,
+    "brand": "Chevy",
+    "model": "Colorado"
+  },
+  "174": {
+    "brand_id": 157,
+    "model_id": 1928,
+    "brand": "Chevy",
+    "model": "Corvette"
+  },
+  "175": {
+    "brand_id": 157,
+    "model_id": 1926,
+    "brand": "Chevy",
+    "model": "Cruze abroad version"
+  },
+  "176": {
+    "brand_id": 157,
+    "model_id": 1909,
+    "brand": "Chevy",
+    "model": "Cruze hatchback"
+  },
+  "177": {
+    "brand_id": 157,
+    "model_id": 1908,
+    "brand": "Chevy",
+    "model": "Cruze sedan"
+  },
+  "178": {
+    "brand_id": 157,
+    "model_id": 1907,
+    "brand": "Chevy",
+    "model": "Epica"
+  },
+  "179": {
+    "brand_id": 157,
+    "model_id": 1934,
+    "brand": "Chevy",
+    "model": "Equinox"
+  },
+  "180": {
+    "brand_id": 157,
+    "model_id": 1935,
+    "brand": "Chevy",
+    "model": "Impala"
+  },
+  "181": {
+    "brand_id": 157,
+    "model_id": 1912,
+    "brand": "Chevy",
+    "model": "Lova"
+  },
+  "182": {
+    "brand_id": 157,
+    "model_id": 1913,
+    "brand": "Chevy",
+    "model": "Malibu"
+  },
+  "183": {
+    "brand_id": 157,
+    "model_id": 1924,
+    "brand": "Chevy",
+    "model": "Orlando"
+  },
+  "184": {
+    "brand_id": 157,
+    "model_id": 1914,
+    "brand": "Chevy",
+    "model": "Sail hatchback"
+  },
+  "185": {
+    "brand_id": 157,
+    "model_id": 1915,
+    "brand": "Chevy",
+    "model": "Sail sedan"
+  },
+  "186": {
+    "brand_id": 157,
+    "model_id": 1916,
+    "brand": "Chevy",
+    "model": "Sail SPRINGO"
+  },
+  "187": {
+    "brand_id": 157,
+    "model_id": 1929,
+    "brand": "Chevy",
+    "model": "Silverado"
+  },
+  "188": {
+    "brand_id": 157,
+    "model_id": 1925,
+    "brand": "Chevy",
+    "model": "Sonic"
+  },
+  "189": {
+    "brand_id": 157,
+    "model_id": 1920,
+    "brand": "Chevy",
+    "model": "Spark"
+  },
+  "190": {
+    "brand_id": 157,
+    "model_id": 1930,
+    "brand": "Chevy",
+    "model": "SS"
+  },
+  "191": {
+    "brand_id": 157,
+    "model_id": 1941,
+    "brand": "Chevy",
+    "model": "Tahoe"
+  },
+  "192": {
+    "brand_id": 157,
+    "model_id": 1921,
+    "brand": "Chevy",
+    "model": "Traverse"
+  },
+  "193": {
+    "brand_id": 157,
+    "model_id": 1906,
+    "brand": "Chevy",
+    "model": "Trax"
+  },
+  "194": {
+    "brand_id": 157,
+    "model_id": 1927,
+    "brand": "Chevy",
+    "model": "Trax"
+  },
+  "195": {
+    "brand_id": 157,
+    "model_id": 1918,
+    "brand": "Chevy",
+    "model": "Volt"
+  },
+  "196": {
+    "brand_id": 50,
+    "model_id": 1125,
+    "brand": "Chrysler",
+    "model": "200"
+  },
+  "197": {
+    "brand_id": 50,
+    "model_id": 1131,
+    "brand": "Chrysler",
+    "model": "300C"
+  },
+  "198": {
+    "brand_id": 50,
+    "model_id": 1129,
+    "brand": "Chrysler",
+    "model": "300C SRT"
+  },
+  "199": {
+    "brand_id": 50,
+    "model_id": 1126,
+    "brand": "Chrysler",
+    "model": "Delta"
+  },
+  "200": {
+    "brand_id": 50,
+    "model_id": 1132,
+    "brand": "Chrysler",
+    "model": "Grand Voager"
+  },
+  "201": {
+    "brand_id": 50,
+    "model_id": 1123,
+    "brand": "Chrysler",
+    "model": "Prowler"
+  },
+  "202": {
+    "brand_id": 158,
+    "model_id": 1264,
+    "brand": "Citroen",
+    "model": "c-Elysee hatchback"
+  },
+  "203": {
+    "brand_id": 158,
+    "model_id": 1251,
+    "brand": "Citroen",
+    "model": "c-Elysee sedan"
+  },
+  "204": {
+    "brand_id": 158,
+    "model_id": 1270,
+    "brand": "Citroen",
+    "model": "C-Zero"
+  },
+  "205": {
+    "brand_id": 158,
+    "model_id": 1285,
+    "brand": "Citroen",
+    "model": "C1"
+  },
+  "206": {
+    "brand_id": 158,
+    "model_id": 1257,
+    "brand": "Citroen",
+    "model": "C2"
+  },
+  "207": {
+    "brand_id": 158,
+    "model_id": 1267,
+    "brand": "Citroen",
+    "model": "C3"
+  },
+  "208": {
+    "brand_id": 158,
+    "model_id": 1269,
+    "brand": "Citroen",
+    "model": "C3 Picasso"
+  },
+  "209": {
+    "brand_id": 158,
+    "model_id": 1266,
+    "brand": "Citroen",
+    "model": "C4"
+  },
+  "210": {
+    "brand_id": 158,
+    "model_id": 1265,
+    "brand": "Citroen",
+    "model": "C4 Aircross"
+  },
+  "211": {
+    "brand_id": 158,
+    "model_id": 1258,
+    "brand": "Citroen",
+    "model": "C4L"
+  },
+  "212": {
+    "brand_id": 158,
+    "model_id": 1259,
+    "brand": "Citroen",
+    "model": "C5"
+  },
+  "213": {
+    "brand_id": 158,
+    "model_id": 1284,
+    "brand": "Citroen",
+    "model": "Cactus"
+  },
+  "214": {
+    "brand_id": 158,
+    "model_id": 1253,
+    "brand": "Citroen",
+    "model": "Elysee"
+  },
+  "215": {
+    "brand_id": 158,
+    "model_id": 1287,
+    "brand": "Citroen",
+    "model": "Grand C4 Picasso"
+  },
+  "216": {
+    "brand_id": 158,
+    "model_id": 1283,
+    "brand": "Citroen",
+    "model": "GT"
+  },
+  "217": {
+    "brand_id": 158,
+    "model_id": 1254,
+    "brand": "Citroen",
+    "model": "Quatre Cross"
+  },
+  "218": {
+    "brand_id": 158,
+    "model_id": 1255,
+    "brand": "Citroen",
+    "model": "Quatre hatchback"
+  },
+  "219": {
+    "brand_id": 158,
+    "model_id": 1256,
+    "brand": "Citroen",
+    "model": "Quatre sedan"
+  },
+  "220": {
+    "brand_id": 158,
+    "model_id": 1279,
+    "brand": "Citroen",
+    "model": "Survolt"
+  },
+  "221": {
+    "brand_id": 158,
+    "model_id": 1252,
+    "brand": "Citroen",
+    "model": "Triomphe"
+  },
+  "222": {
+    "brand_id": 5,
+    "model_id": 1039,
+    "brand": "Dacia",
+    "model": "Dokker"
+  },
+  "223": {
+    "brand_id": 5,
+    "model_id": 1040,
+    "brand": "Dacia",
+    "model": "Duster"
+  },
+  "224": {
+    "brand_id": 5,
+    "model_id": 1041,
+    "brand": "Dacia",
+    "model": "Logan"
+  },
+  "225": {
+    "brand_id": 5,
+    "model_id": 1042,
+    "brand": "Dacia",
+    "model": "Sandero"
+  },
+  "226": {
+    "brand_id": 74,
+    "model_id": 1296,
+    "brand": "Daihatsu",
+    "model": "Xenia"
+  },
+  "227": {
+    "brand_id": 145,
+    "model_id": 521,
+    "brand": "Dodge",
+    "model": "Avenger"
+  },
+  "228": {
+    "brand_id": 145,
+    "model_id": 532,
+    "brand": "Dodge",
+    "model": "Caliber"
+  },
+  "229": {
+    "brand_id": 145,
+    "model_id": 519,
+    "brand": "Dodge",
+    "model": "Challenger"
+  },
+  "230": {
+    "brand_id": 145,
+    "model_id": 530,
+    "brand": "Dodge",
+    "model": "Challenger SRT"
+  },
+  "231": {
+    "brand_id": 145,
+    "model_id": 523,
+    "brand": "Dodge",
+    "model": "Charger"
+  },
+  "232": {
+    "brand_id": 145,
+    "model_id": 529,
+    "brand": "Dodge",
+    "model": "Charger SRT"
+  },
+  "233": {
+    "brand_id": 145,
+    "model_id": 522,
+    "brand": "Dodge",
+    "model": "Dart"
+  },
+  "234": {
+    "brand_id": 145,
+    "model_id": 520,
+    "brand": "Dodge",
+    "model": "Durango"
+  },
+  "235": {
+    "brand_id": 145,
+    "model_id": 518,
+    "brand": "Dodge",
+    "model": "Journey"
+  },
+  "236": {
+    "brand_id": 145,
+    "model_id": 517,
+    "brand": "Dodge",
+    "model": "Ram"
+  },
+  "237": {
+    "brand_id": 145,
+    "model_id": 526,
+    "brand": "Dodge",
+    "model": "Rampage"
+  },
+  "238": {
+    "brand_id": 145,
+    "model_id": 524,
+    "brand": "Dodge",
+    "model": "Viper"
+  },
+  "239": {
+    "brand_id": 4,
+    "model_id": 512,
+    "brand": "DS",
+    "model": "3"
+  },
+  "240": {
+    "brand_id": 4,
+    "model_id": 516,
+    "brand": "DS",
+    "model": "4"
+  },
+  "241": {
+    "brand_id": 4,
+    "model_id": 509,
+    "brand": "DS",
+    "model": "5"
+  },
+  "242": {
+    "brand_id": 4,
+    "model_id": 511,
+    "brand": "DS",
+    "model": "5LS"
+  },
+  "243": {
+    "brand_id": 4,
+    "model_id": 510,
+    "brand": "DS",
+    "model": "6"
+  },
+  "244": {
+    "brand_id": 112,
+    "model_id": 663,
+    "brand": "Ferrari",
+    "model": "458"
+  },
+  "245": {
+    "brand_id": 112,
+    "model_id": 664,
+    "brand": "Ferrari",
+    "model": "599"
+  },
+  "246": {
+    "brand_id": 112,
+    "model_id": 662,
+    "brand": "Ferrari",
+    "model": "California"
+  },
+  "247": {
+    "brand_id": 112,
+    "model_id": 670,
+    "brand": "Ferrari",
+    "model": "F12berlinetta"
+  },
+  "248": {
+    "brand_id": 112,
+    "model_id": 667,
+    "brand": "Ferrari",
+    "model": "FF"
+  },
+  "249": {
+    "brand_id": 112,
+    "model_id": 668,
+    "brand": "Ferrari",
+    "model": "LaFerrari"
+  },
+  "250": {
+    "brand_id": 112,
+    "model_id": 669,
+    "brand": "Ferrari",
+    "model": "Sergio"
+  },
+  "251": {
+    "brand_id": 134,
+    "model_id": 661,
+    "brand": "FIAT",
+    "model": "500"
+  },
+  "252": {
+    "brand_id": 134,
+    "model_id": 653,
+    "brand": "FIAT",
+    "model": "500L"
+  },
+  "253": {
+    "brand_id": 134,
+    "model_id": 645,
+    "brand": "FIAT",
+    "model": "Bravo"
+  },
+  "254": {
+    "brand_id": 134,
+    "model_id": 651,
+    "brand": "FIAT",
+    "model": "Doblo"
+  },
+  "255": {
+    "brand_id": 134,
+    "model_id": 641,
+    "brand": "FIAT",
+    "model": "Feixiang"
+  },
+  "256": {
+    "brand_id": 134,
+    "model_id": 650,
+    "brand": "FIAT",
+    "model": "Fiorino Qubo"
+  },
+  "257": {
+    "brand_id": 134,
+    "model_id": 647,
+    "brand": "FIAT",
+    "model": "Freemont"
+  },
+  "258": {
+    "brand_id": 134,
+    "model_id": 654,
+    "brand": "FIAT",
+    "model": "Idea"
+  },
+  "259": {
+    "brand_id": 134,
+    "model_id": 648,
+    "brand": "FIAT",
+    "model": "Linea"
+  },
+  "260": {
+    "brand_id": 134,
+    "model_id": 643,
+    "brand": "FIAT",
+    "model": "Palio"
+  },
+  "261": {
+    "brand_id": 134,
+    "model_id": 655,
+    "brand": "FIAT",
+    "model": "Panda"
+  },
+  "262": {
+    "brand_id": 134,
+    "model_id": 649,
+    "brand": "FIAT",
+    "model": "Punto"
+  },
+  "263": {
+    "brand_id": 134,
+    "model_id": 657,
+    "brand": "FIAT",
+    "model": "Uno"
+  },
+  "264": {
+    "brand_id": 134,
+    "model_id": 642,
+    "brand": "FIAT",
+    "model": "Zhiyue"
+  },
+  "265": {
+    "brand_id": 6,
+    "model_id": 1777,
+    "brand": "Fisker",
+    "model": "Karma"
+  },
+  "266": {
+    "brand_id": 6,
+    "model_id": 1774,
+    "brand": "Fisker",
+    "model": "Surf"
+  },
+  "267": {
+    "brand_id": 122,
+    "model_id": 618,
+    "brand": "Ford",
+    "model": "B-MAX"
+  },
+  "268": {
+    "brand_id": 122,
+    "model_id": 619,
+    "brand": "Ford",
+    "model": "C-MAX"
+  },
+  "269": {
+    "brand_id": 122,
+    "model_id": 587,
+    "brand": "Ford",
+    "model": "Classic Focus hatchback"
+  },
+  "270": {
+    "brand_id": 122,
+    "model_id": 588,
+    "brand": "Ford",
+    "model": "Classic Focus sedan"
+  },
+  "271": {
+    "brand_id": 122,
+    "model_id": 593,
+    "brand": "Ford",
+    "model": "Ecosport"
+  },
+  "272": {
+    "brand_id": 122,
+    "model_id": 606,
+    "brand": "Ford",
+    "model": "Edge"
+  },
+  "273": {
+    "brand_id": 122,
+    "model_id": 585,
+    "brand": "Ford",
+    "model": "escort"
+  },
+  "274": {
+    "brand_id": 122,
+    "model_id": 632,
+    "brand": "Ford",
+    "model": "Expedition"
+  },
+  "275": {
+    "brand_id": 122,
+    "model_id": 607,
+    "brand": "Ford",
+    "model": "Explorer"
+  },
+  "276": {
+    "brand_id": 122,
+    "model_id": 601,
+    "brand": "Ford",
+    "model": "F-150"
+  },
+  "277": {
+    "brand_id": 122,
+    "model_id": 603,
+    "brand": "Ford",
+    "model": "F-350"
+  },
+  "278": {
+    "brand_id": 122,
+    "model_id": 604,
+    "brand": "Ford",
+    "model": "F-650"
+  },
+  "279": {
+    "brand_id": 146,
+    "model_id": 1745,
+    "brand": "Ford",
+    "model": "F12"
+  },
+  "280": {
+    "brand_id": 146,
+    "model_id": 1739,
+    "brand": "Ford",
+    "model": "F16"
+  },
+  "281": {
+    "brand_id": 146,
+    "model_id": 1740,
+    "brand": "Ford",
+    "model": "F99"
+  },
+  "282": {
+    "brand_id": 122,
+    "model_id": 622,
+    "brand": "Ford",
+    "model": "Falcon"
+  },
+  "283": {
+    "brand_id": 122,
+    "model_id": 597,
+    "brand": "Ford",
+    "model": "Fiesta hatchback"
+  },
+  "284": {
+    "brand_id": 122,
+    "model_id": 586,
+    "brand": "Ford",
+    "model": "Fiesta sedan"
+  },
+  "285": {
+    "brand_id": 122,
+    "model_id": 605,
+    "brand": "Ford",
+    "model": "Fiesta ST"
+  },
+  "286": {
+    "brand_id": 122,
+    "model_id": 610,
+    "brand": "Ford",
+    "model": "Flex"
+  },
+  "287": {
+    "brand_id": 122,
+    "model_id": 600,
+    "brand": "Ford",
+    "model": "Focus ST"
+  },
+  "288": {
+    "brand_id": 122,
+    "model_id": 613,
+    "brand": "Ford",
+    "model": "Fusion"
+  },
+  "289": {
+    "brand_id": 122,
+    "model_id": 609,
+    "brand": "Ford",
+    "model": "Ka"
+  },
+  "290": {
+    "brand_id": 122,
+    "model_id": 594,
+    "brand": "Ford",
+    "model": "Kuga"
+  },
+  "291": {
+    "brand_id": 122,
+    "model_id": 596,
+    "brand": "Ford",
+    "model": "Mendeo"
+  },
+  "292": {
+    "brand_id": 122,
+    "model_id": 595,
+    "brand": "Ford",
+    "model": "Mendeo Zhisheng"
+  },
+  "293": {
+    "brand_id": 122,
+    "model_id": 608,
+    "brand": "Ford",
+    "model": "Mustang"
+  },
+  "294": {
+    "brand_id": 122,
+    "model_id": 590,
+    "brand": "Ford",
+    "model": "New Focus hatchback"
+  },
+  "295": {
+    "brand_id": 122,
+    "model_id": 591,
+    "brand": "Ford",
+    "model": "New Focus sedan"
+  },
+  "296": {
+    "brand_id": 122,
+    "model_id": 624,
+    "brand": "Ford",
+    "model": "Ranger"
+  },
+  "297": {
+    "brand_id": 122,
+    "model_id": 589,
+    "brand": "Ford",
+    "model": "S-MAX"
+  },
+  "298": {
+    "brand_id": 122,
+    "model_id": 633,
+    "brand": "Ford",
+    "model": "Super Duty"
+  },
+  "299": {
+    "brand_id": 122,
+    "model_id": 625,
+    "brand": "Ford",
+    "model": "Territory"
+  },
+  "300": {
+    "brand_id": 122,
+    "model_id": 599,
+    "brand": "Ford",
+    "model": "Transit"
+  },
+  "301": {
+    "brand_id": 122,
+    "model_id": 617,
+    "brand": "Ford",
+    "model": "Transit"
+  },
+  "302": {
+    "brand_id": 69,
+    "model_id": 1486,
+    "brand": "Geely",
+    "model": "Classic Imperial hatchback"
+  },
+  "303": {
+    "brand_id": 69,
+    "model_id": 1487,
+    "brand": "Geely",
+    "model": "Classic Imperial sedan"
+  },
+  "304": {
+    "brand_id": 69,
+    "model_id": 1509,
+    "brand": "Geely",
+    "model": "EC8"
+  },
+  "305": {
+    "brand_id": 69,
+    "model_id": 1472,
+    "brand": "Geely",
+    "model": "GC7"
+  },
+  "306": {
+    "brand_id": 69,
+    "model_id": 1507,
+    "brand": "Geely",
+    "model": "GC9"
+  },
+  "307": {
+    "brand_id": 69,
+    "model_id": 1473,
+    "brand": "Geely",
+    "model": "GX2"
+  },
+  "308": {
+    "brand_id": 69,
+    "model_id": 1474,
+    "brand": "Geely",
+    "model": "GX7"
+  },
+  "309": {
+    "brand_id": 69,
+    "model_id": 1488,
+    "brand": "Geely",
+    "model": "Imperial hatchback"
+  },
+  "310": {
+    "brand_id": 69,
+    "model_id": 1484,
+    "brand": "Geely",
+    "model": "Jinying"
+  },
+  "311": {
+    "brand_id": 69,
+    "model_id": 1481,
+    "brand": "Geely",
+    "model": "King Kong CROSS"
+  },
+  "312": {
+    "brand_id": 69,
+    "model_id": 1483,
+    "brand": "Geely",
+    "model": "King Kong sedan"
+  },
+  "313": {
+    "brand_id": 69,
+    "model_id": 1490,
+    "brand": "Geely",
+    "model": "Panda"
+  },
+  "314": {
+    "brand_id": 69,
+    "model_id": 1475,
+    "brand": "Geely",
+    "model": "SC3"
+  },
+  "315": {
+    "brand_id": 69,
+    "model_id": 1476,
+    "brand": "Geely",
+    "model": "SC5-RV"
+  },
+  "316": {
+    "brand_id": 69,
+    "model_id": 1478,
+    "brand": "Geely",
+    "model": "SC7"
+  },
+  "317": {
+    "brand_id": 69,
+    "model_id": 1479,
+    "brand": "Geely",
+    "model": "SX7"
+  },
+  "318": {
+    "brand_id": 69,
+    "model_id": 1480,
+    "brand": "Geely",
+    "model": "TX4"
+  },
+  "319": {
+    "brand_id": 69,
+    "model_id": 1492,
+    "brand": "Geely",
+    "model": "Vision"
+  },
+  "320": {
+    "brand_id": 69,
+    "model_id": 1494,
+    "brand": "Geely",
+    "model": "Ziyoujian"
+  },
+  "321": {
+    "brand_id": 7,
+    "model_id": 685,
+    "brand": "GMC",
+    "model": "Acadia"
+  },
+  "322": {
+    "brand_id": 7,
+    "model_id": 686,
+    "brand": "GMC",
+    "model": "CANYON"
+  },
+  "323": {
+    "brand_id": 7,
+    "model_id": 687,
+    "brand": "GMC",
+    "model": "Savana"
+  },
+  "324": {
+    "brand_id": 7,
+    "model_id": 684,
+    "brand": "GMC",
+    "model": "Sierra"
+  },
+  "325": {
+    "brand_id": 7,
+    "model_id": 683,
+    "brand": "GMC",
+    "model": "Terrain"
+  },
+  "326": {
+    "brand_id": 7,
+    "model_id": 682,
+    "brand": "GMC",
+    "model": "Yukon"
+  },
+  "327": {
+    "brand_id": 150,
+    "model_id": 377,
+    "brand": "GreatWall",
+    "model": "Great Wall C20R"
+  },
+  "328": {
+    "brand_id": 150,
+    "model_id": 396,
+    "brand": "GreatWall",
+    "model": "Great Wall C30"
+  },
+  "329": {
+    "brand_id": 150,
+    "model_id": 378,
+    "brand": "GreatWall",
+    "model": "Great Wall C50"
+  },
+  "330": {
+    "brand_id": 150,
+    "model_id": 379,
+    "brand": "GreatWall",
+    "model": "Great Wall M1"
+  },
+  "331": {
+    "brand_id": 150,
+    "model_id": 380,
+    "brand": "GreatWall",
+    "model": "Great Wall M2"
+  },
+  "332": {
+    "brand_id": 150,
+    "model_id": 381,
+    "brand": "GreatWall",
+    "model": "Great Wall M4"
+  },
+  "333": {
+    "brand_id": 150,
+    "model_id": 382,
+    "brand": "GreatWall",
+    "model": "Great Wall V80"
+  },
+  "334": {
+    "brand_id": 150,
+    "model_id": 387,
+    "brand": "GreatWall",
+    "model": "Jingling"
+  },
+  "335": {
+    "brand_id": 150,
+    "model_id": 388,
+    "brand": "GreatWall",
+    "model": "Kuxiong"
+  },
+  "336": {
+    "brand_id": 150,
+    "model_id": 389,
+    "brand": "GreatWall",
+    "model": "Lingao"
+  },
+  "337": {
+    "brand_id": 150,
+    "model_id": 384,
+    "brand": "GreatWall",
+    "model": "Wingle 5"
+  },
+  "338": {
+    "brand_id": 150,
+    "model_id": 385,
+    "brand": "GreatWall",
+    "model": "Wingle 6"
+  },
+  "339": {
+    "brand_id": 150,
+    "model_id": 391,
+    "brand": "GreatWall",
+    "model": "Xuanli"
+  },
+  "340": {
+    "brand_id": 150,
+    "model_id": 392,
+    "brand": "GreatWall",
+    "model": "Xuanli CROSS"
+  },
+  "341": {
+    "brand_id": 71,
+    "model_id": 699,
+    "brand": "Haval",
+    "model": "H2"
+  },
+  "342": {
+    "brand_id": 71,
+    "model_id": 688,
+    "brand": "Haval",
+    "model": "H3"
+  },
+  "343": {
+    "brand_id": 71,
+    "model_id": 689,
+    "brand": "Haval",
+    "model": "H5"
+  },
+  "344": {
+    "brand_id": 71,
+    "model_id": 690,
+    "brand": "Haval",
+    "model": "H6"
+  },
+  "345": {
+    "brand_id": 71,
+    "model_id": 691,
+    "brand": "Haval",
+    "model": "H8"
+  },
+  "346": {
+    "brand_id": 100,
+    "model_id": 213,
+    "brand": "Honda",
+    "model": "Accord"
+  },
+  "347": {
+    "brand_id": 100,
+    "model_id": 210,
+    "brand": "Honda",
+    "model": "City"
+  },
+  "348": {
+    "brand_id": 100,
+    "model_id": 251,
+    "brand": "Honda",
+    "model": "Civic"
+  },
+  "349": {
+    "brand_id": 100,
+    "model_id": 252,
+    "brand": "Honda",
+    "model": "CR-V"
+  },
+  "350": {
+    "brand_id": 100,
+    "model_id": 216,
+    "brand": "Honda",
+    "model": "CR-Z"
+  },
+  "351": {
+    "brand_id": 100,
+    "model_id": 212,
+    "brand": "Honda",
+    "model": "Crider"
+  },
+  "352": {
+    "brand_id": 100,
+    "model_id": 211,
+    "brand": "Honda",
+    "model": "Crosstour"
+  },
+  "353": {
+    "brand_id": 100,
+    "model_id": 248,
+    "brand": "Honda",
+    "model": "Elysion"
+  },
+  "354": {
+    "brand_id": 100,
+    "model_id": 232,
+    "brand": "Honda",
+    "model": "FCX"
+  },
+  "355": {
+    "brand_id": 100,
+    "model_id": 215,
+    "brand": "Honda",
+    "model": "Fit"
+  },
+  "356": {
+    "brand_id": 100,
+    "model_id": 243,
+    "brand": "Honda",
+    "model": "HR-V"
+  },
+  "357": {
+    "brand_id": 100,
+    "model_id": 247,
+    "brand": "Honda",
+    "model": "Insight"
+  },
+  "358": {
+    "brand_id": 100,
+    "model_id": 249,
+    "brand": "Honda",
+    "model": "Jade"
+  },
+  "359": {
+    "brand_id": 100,
+    "model_id": 226,
+    "brand": "Honda",
+    "model": "NSX"
+  },
+  "360": {
+    "brand_id": 100,
+    "model_id": 209,
+    "brand": "Honda",
+    "model": "Odyssey"
+  },
+  "361": {
+    "brand_id": 100,
+    "model_id": 235,
+    "brand": "Honda",
+    "model": "ONE"
+  },
+  "362": {
+    "brand_id": 100,
+    "model_id": 221,
+    "brand": "Honda",
+    "model": "S2000"
+  },
+  "363": {
+    "brand_id": 100,
+    "model_id": 250,
+    "brand": "Honda",
+    "model": "Spirior"
+  },
+  "364": {
+    "brand_id": 100,
+    "model_id": 214,
+    "brand": "Honda",
+    "model": "Vezel"
+  },
+  "365": {
+    "brand_id": 118,
+    "model_id": 966,
+    "brand": "Hyundai",
+    "model": "Accent"
+  },
+  "366": {
+    "brand_id": 118,
+    "model_id": 1001,
+    "brand": "Hyundai",
+    "model": "Accent abroad version"
+  },
+  "367": {
+    "brand_id": 118,
+    "model_id": 957,
+    "brand": "Hyundai",
+    "model": "Avante"
+  },
+  "368": {
+    "brand_id": 118,
+    "model_id": 967,
+    "brand": "Hyundai",
+    "model": "Elantra"
+  },
+  "369": {
+    "brand_id": 118,
+    "model_id": 1002,
+    "brand": "Hyundai",
+    "model": "Elantra abroad version"
+  },
+  "370": {
+    "brand_id": 118,
+    "model_id": 968,
+    "brand": "Hyundai",
+    "model": "Elantra Yuedong"
+  },
+  "371": {
+    "brand_id": 118,
+    "model_id": 980,
+    "brand": "Hyundai",
+    "model": "Equus"
+  },
+  "372": {
+    "brand_id": 118,
+    "model_id": 975,
+    "brand": "Hyundai",
+    "model": "Genesis"
+  },
+  "373": {
+    "brand_id": 118,
+    "model_id": 973,
+    "brand": "Hyundai",
+    "model": "Grand SantaFe"
+  },
+  "374": {
+    "brand_id": 118,
+    "model_id": 981,
+    "brand": "Hyundai",
+    "model": "Grandeur"
+  },
+  "375": {
+    "brand_id": 118,
+    "model_id": 987,
+    "brand": "Hyundai",
+    "model": "i10"
+  },
+  "376": {
+    "brand_id": 118,
+    "model_id": 982,
+    "brand": "Hyundai",
+    "model": "i20"
+  },
+  "377": {
+    "brand_id": 118,
+    "model_id": 955,
+    "brand": "Hyundai",
+    "model": "i30"
+  },
+  "378": {
+    "brand_id": 118,
+    "model_id": 984,
+    "brand": "Hyundai",
+    "model": "i40"
+  },
+  "379": {
+    "brand_id": 118,
+    "model_id": 997,
+    "brand": "Hyundai",
+    "model": "ix20"
+  },
+  "380": {
+    "brand_id": 118,
+    "model_id": 971,
+    "brand": "Hyundai",
+    "model": "ix25"
+  },
+  "381": {
+    "brand_id": 118,
+    "model_id": 956,
+    "brand": "Hyundai",
+    "model": "ix35"
+  },
+  "382": {
+    "brand_id": 118,
+    "model_id": 959,
+    "brand": "Hyundai",
+    "model": "Mistra"
+  },
+  "383": {
+    "brand_id": 118,
+    "model_id": 960,
+    "brand": "Hyundai",
+    "model": "Moinca"
+  },
+  "384": {
+    "brand_id": 118,
+    "model_id": 996,
+    "brand": "Hyundai",
+    "model": "Nuvis"
+  },
+  "385": {
+    "brand_id": 118,
+    "model_id": 962,
+    "brand": "Hyundai",
+    "model": "Rena"
+  },
+  "386": {
+    "brand_id": 118,
+    "model_id": 976,
+    "brand": "Hyundai",
+    "model": "Rohens"
+  },
+  "387": {
+    "brand_id": 118,
+    "model_id": 977,
+    "brand": "Hyundai",
+    "model": "Rohens Coupe"
+  },
+  "388": {
+    "brand_id": 118,
+    "model_id": 961,
+    "brand": "Hyundai",
+    "model": "Santafe"
+  },
+  "389": {
+    "brand_id": 118,
+    "model_id": 958,
+    "brand": "Hyundai",
+    "model": "Sonata"
+  },
+  "390": {
+    "brand_id": 118,
+    "model_id": 964,
+    "brand": "Hyundai",
+    "model": "Sonata 8"
+  },
+  "391": {
+    "brand_id": 118,
+    "model_id": 1000,
+    "brand": "Hyundai",
+    "model": "Sonata abroad version"
+  },
+  "392": {
+    "brand_id": 118,
+    "model_id": 965,
+    "brand": "Hyundai",
+    "model": "Tucson"
+  },
+  "393": {
+    "brand_id": 118,
+    "model_id": 983,
+    "brand": "Hyundai",
+    "model": "Tucson abroad vresion"
+  },
+  "394": {
+    "brand_id": 118,
+    "model_id": 1004,
+    "brand": "Hyundai",
+    "model": "Veloster"
+  },
+  "395": {
+    "brand_id": 118,
+    "model_id": 979,
+    "brand": "Hyundai",
+    "model": "Veracruz"
+  },
+  "396": {
+    "brand_id": 118,
+    "model_id": 963,
+    "brand": "Hyundai",
+    "model": "Verna"
+  },
+  "397": {
+    "brand_id": 118,
+    "model_id": 974,
+    "brand": "Hyundai",
+    "model": "Wagon"
+  },
+  "398": {
+    "brand_id": 131,
+    "model_id": 1005,
+    "brand": "Infiniti",
+    "model": "ESQ"
+  },
+  "399": {
+    "brand_id": 131,
+    "model_id": 1017,
+    "brand": "Infiniti",
+    "model": "Essence"
+  },
+  "400": {
+    "brand_id": 131,
+    "model_id": 1023,
+    "brand": "Infiniti",
+    "model": "G Class"
+  },
+  "401": {
+    "brand_id": 131,
+    "model_id": 1006,
+    "brand": "Infiniti",
+    "model": "Q50"
+  },
+  "402": {
+    "brand_id": 131,
+    "model_id": 1024,
+    "brand": "Infiniti",
+    "model": "Q50L"
+  },
+  "403": {
+    "brand_id": 131,
+    "model_id": 1008,
+    "brand": "Infiniti",
+    "model": "Q60"
+  },
+  "404": {
+    "brand_id": 131,
+    "model_id": 1010,
+    "brand": "Infiniti",
+    "model": "Q70L"
+  },
+  "405": {
+    "brand_id": 131,
+    "model_id": 1012,
+    "brand": "Infiniti",
+    "model": "QX50"
+  },
+  "406": {
+    "brand_id": 131,
+    "model_id": 1013,
+    "brand": "Infiniti",
+    "model": "QX60"
+  },
+  "407": {
+    "brand_id": 131,
+    "model_id": 1015,
+    "brand": "Infiniti",
+    "model": "QX70"
+  },
+  "408": {
+    "brand_id": 131,
+    "model_id": 1016,
+    "brand": "Infiniti",
+    "model": "QX80"
+  },
+  "409": {
+    "brand_id": 42,
+    "model_id": 1248,
+    "brand": "Isuzu",
+    "model": "D-MAX"
+  },
+  "410": {
+    "brand_id": 46,
+    "model_id": 1294,
+    "brand": "Iveco",
+    "model": "Campagnola"
+  },
+  "411": {
+    "brand_id": 46,
+    "model_id": 1288,
+    "brand": "Iveco",
+    "model": "Power Daily"
+  },
+  "412": {
+    "brand_id": 92,
+    "model_id": 749,
+    "brand": "Jaguar",
+    "model": "Gaguar C-X75"
+  },
+  "413": {
+    "brand_id": 92,
+    "model_id": 753,
+    "brand": "Jaguar",
+    "model": "Gaguar E-TYPE"
+  },
+  "414": {
+    "brand_id": 92,
+    "model_id": 746,
+    "brand": "Jaguar",
+    "model": "Gaguar F-TYPE"
+  },
+  "415": {
+    "brand_id": 92,
+    "model_id": 755,
+    "brand": "Jaguar",
+    "model": "Gaguar XE"
+  },
+  "416": {
+    "brand_id": 92,
+    "model_id": 756,
+    "brand": "Jaguar",
+    "model": "Gaguar XF"
+  },
+  "417": {
+    "brand_id": 92,
+    "model_id": 747,
+    "brand": "Jaguar",
+    "model": "Gaguar XJ"
+  },
+  "418": {
+    "brand_id": 92,
+    "model_id": 748,
+    "brand": "Jaguar",
+    "model": "Gaguar XK"
+  },
+  "419": {
+    "brand_id": 11,
+    "model_id": 737,
+    "brand": "Jeep",
+    "model": "Cherokee"
+  },
+  "420": {
+    "brand_id": 11,
+    "model_id": 736,
+    "brand": "Jeep",
+    "model": "Compass"
+  },
+  "421": {
+    "brand_id": 11,
+    "model_id": 745,
+    "brand": "Jeep",
+    "model": "Grand Cherokee"
+  },
+  "422": {
+    "brand_id": 11,
+    "model_id": 734,
+    "brand": "Jeep",
+    "model": "Grand Cherokee SRT"
+  },
+  "423": {
+    "brand_id": 11,
+    "model_id": 738,
+    "brand": "Jeep",
+    "model": "Patriot"
+  },
+  "424": {
+    "brand_id": 11,
+    "model_id": 742,
+    "brand": "Jeep",
+    "model": "Renegade"
+  },
+  "425": {
+    "brand_id": 11,
+    "model_id": 735,
+    "brand": "Jeep",
+    "model": "Wrangler"
+  },
+  "426": {
+    "brand_id": 140,
+    "model_id": 1195,
+    "brand": "Kia",
+    "model": "Borrego"
+  },
+  "427": {
+    "brand_id": 140,
+    "model_id": 1206,
+    "brand": "Kia",
+    "model": "Ceed"
+  },
+  "428": {
+    "brand_id": 140,
+    "model_id": 1187,
+    "brand": "Kia",
+    "model": "Cerato"
+  },
+  "429": {
+    "brand_id": 140,
+    "model_id": 1180,
+    "brand": "Kia",
+    "model": "Forte"
+  },
+  "430": {
+    "brand_id": 140,
+    "model_id": 1210,
+    "brand": "Kia",
+    "model": "Forte"
+  },
+  "431": {
+    "brand_id": 140,
+    "model_id": 1194,
+    "brand": "Kia",
+    "model": "K2 hatchback"
+  },
+  "432": {
+    "brand_id": 140,
+    "model_id": 1181,
+    "brand": "Kia",
+    "model": "K2 sedan"
+  },
+  "433": {
+    "brand_id": 140,
+    "model_id": 1182,
+    "brand": "Kia",
+    "model": "K3"
+  },
+  "434": {
+    "brand_id": 140,
+    "model_id": 1183,
+    "brand": "Kia",
+    "model": "K3S"
+  },
+  "435": {
+    "brand_id": 140,
+    "model_id": 1184,
+    "brand": "Kia",
+    "model": "K4"
+  },
+  "436": {
+    "brand_id": 140,
+    "model_id": 1185,
+    "brand": "Kia",
+    "model": "K5"
+  },
+  "437": {
+    "brand_id": 140,
+    "model_id": 1196,
+    "brand": "Kia",
+    "model": "K5 hybrid"
+  },
+  "438": {
+    "brand_id": 140,
+    "model_id": 1209,
+    "brand": "Kia",
+    "model": "K9"
+  },
+  "439": {
+    "brand_id": 140,
+    "model_id": 1221,
+    "brand": "Kia",
+    "model": "Kaizun"
+  },
+  "440": {
+    "brand_id": 140,
+    "model_id": 1201,
+    "brand": "Kia",
+    "model": "New Carens"
+  },
+  "441": {
+    "brand_id": 140,
+    "model_id": 1205,
+    "brand": "Kia",
+    "model": "Picanto"
+  },
+  "442": {
+    "brand_id": 140,
+    "model_id": 1186,
+    "brand": "Kia",
+    "model": "RIO"
+  },
+  "443": {
+    "brand_id": 140,
+    "model_id": 1220,
+    "brand": "Kia",
+    "model": "Sedona"
+  },
+  "444": {
+    "brand_id": 140,
+    "model_id": 1199,
+    "brand": "Kia",
+    "model": "Shuma"
+  },
+  "445": {
+    "brand_id": 140,
+    "model_id": 1200,
+    "brand": "Kia",
+    "model": "Sorento"
+  },
+  "446": {
+    "brand_id": 140,
+    "model_id": 1189,
+    "brand": "Kia",
+    "model": "Soul"
+  },
+  "447": {
+    "brand_id": 140,
+    "model_id": 1188,
+    "brand": "Kia",
+    "model": "Sportage"
+  },
+  "448": {
+    "brand_id": 140,
+    "model_id": 1203,
+    "brand": "Kia",
+    "model": "SPORTAGE"
+  },
+  "449": {
+    "brand_id": 140,
+    "model_id": 1190,
+    "brand": "Kia",
+    "model": "Sportage R"
+  },
+  "450": {
+    "brand_id": 140,
+    "model_id": 1202,
+    "brand": "Kia",
+    "model": "venga"
+  },
+  "451": {
+    "brand_id": 140,
+    "model_id": 1197,
+    "brand": "Kia",
+    "model": "VQ"
+  },
+  "452": {
+    "brand_id": 125,
+    "model_id": 780,
+    "brand": "Koenigsegg",
+    "model": "Agera"
+  },
+  "453": {
+    "brand_id": 51,
+    "model_id": 1155,
+    "brand": "Lamborghini",
+    "model": "Aventador"
+  },
+  "454": {
+    "brand_id": 51,
+    "model_id": 1159,
+    "brand": "Lamborghini",
+    "model": "Gallardo"
+  },
+  "455": {
+    "brand_id": 51,
+    "model_id": 1165,
+    "brand": "Lamborghini",
+    "model": "Huracan"
+  },
+  "456": {
+    "brand_id": 51,
+    "model_id": 1156,
+    "brand": "Lamborghini",
+    "model": "Reventon"
+  },
+  "457": {
+    "brand_id": 51,
+    "model_id": 1162,
+    "brand": "Lamborghini",
+    "model": "Veneno"
+  },
+  "458": {
+    "brand_id": 136,
+    "model_id": 1782,
+    "brand": "Lancia",
+    "model": "Delta"
+  },
+  "459": {
+    "brand_id": 136,
+    "model_id": 1778,
+    "brand": "Lancia",
+    "model": "Flavia"
+  },
+  "460": {
+    "brand_id": 136,
+    "model_id": 1779,
+    "brand": "Lancia",
+    "model": "Thema"
+  },
+  "461": {
+    "brand_id": 136,
+    "model_id": 1781,
+    "brand": "Lancia",
+    "model": "Ypsilon"
+  },
+  "462": {
+    "brand_id": 142,
+    "model_id": 1142,
+    "brand": "Land Rover",
+    "model": "DC100"
+  },
+  "463": {
+    "brand_id": 142,
+    "model_id": 1141,
+    "brand": "Land Rover",
+    "model": "Defender"
+  },
+  "464": {
+    "brand_id": 142,
+    "model_id": 1134,
+    "brand": "Land Rover",
+    "model": "Discovery"
+  },
+  "465": {
+    "brand_id": 142,
+    "model_id": 1137,
+    "brand": "Land Rover",
+    "model": "Evoque"
+  },
+  "466": {
+    "brand_id": 142,
+    "model_id": 1140,
+    "brand": "Land Rover",
+    "model": "Freelander"
+  },
+  "467": {
+    "brand_id": 142,
+    "model_id": 1135,
+    "brand": "Land Rover",
+    "model": "Range Rover"
+  },
+  "468": {
+    "brand_id": 142,
+    "model_id": 1138,
+    "brand": "Land Rover",
+    "model": "Range Rover Sport"
+  },
+  "469": {
+    "brand_id": 159,
+    "model_id": 1565,
+    "brand": "Lexus",
+    "model": "CT"
+  },
+  "470": {
+    "brand_id": 159,
+    "model_id": 1587,
+    "brand": "Lexus",
+    "model": "ES"
+  },
+  "471": {
+    "brand_id": 159,
+    "model_id": 1567,
+    "brand": "Lexus",
+    "model": "GS"
+  },
+  "472": {
+    "brand_id": 159,
+    "model_id": 1568,
+    "brand": "Lexus",
+    "model": "GS hybrid"
+  },
+  "473": {
+    "brand_id": 159,
+    "model_id": 1569,
+    "brand": "Lexus",
+    "model": "GX"
+  },
+  "474": {
+    "brand_id": 159,
+    "model_id": 1581,
+    "brand": "Lexus",
+    "model": "HS"
+  },
+  "475": {
+    "brand_id": 159,
+    "model_id": 1570,
+    "brand": "Lexus",
+    "model": "IS"
+  },
+  "476": {
+    "brand_id": 159,
+    "model_id": 1571,
+    "brand": "Lexus",
+    "model": "IS convertible"
+  },
+  "477": {
+    "brand_id": 159,
+    "model_id": 1572,
+    "brand": "Lexus",
+    "model": "LF-A"
+  },
+  "478": {
+    "brand_id": 159,
+    "model_id": 1583,
+    "brand": "Lexus",
+    "model": "LF-CC"
+  },
+  "479": {
+    "brand_id": 159,
+    "model_id": 1584,
+    "brand": "Lexus",
+    "model": "LF-Gh"
+  },
+  "480": {
+    "brand_id": 159,
+    "model_id": 1582,
+    "brand": "Lexus",
+    "model": "LF-LC"
+  },
+  "481": {
+    "brand_id": 159,
+    "model_id": 1585,
+    "brand": "Lexus",
+    "model": "LF-NX"
+  },
+  "482": {
+    "brand_id": 159,
+    "model_id": 1573,
+    "brand": "Lexus",
+    "model": "LS"
+  },
+  "483": {
+    "brand_id": 159,
+    "model_id": 1575,
+    "brand": "Lexus",
+    "model": "LX"
+  },
+  "484": {
+    "brand_id": 159,
+    "model_id": 1586,
+    "brand": "Lexus",
+    "model": "NX"
+  },
+  "485": {
+    "brand_id": 159,
+    "model_id": 1576,
+    "brand": "Lexus",
+    "model": "RC"
+  },
+  "486": {
+    "brand_id": 159,
+    "model_id": 1577,
+    "brand": "Lexus",
+    "model": "RX"
+  },
+  "487": {
+    "brand_id": 101,
+    "model_id": 821,
+    "brand": "Lincoln",
+    "model": "MKC"
+  },
+  "488": {
+    "brand_id": 101,
+    "model_id": 816,
+    "brand": "Lincoln",
+    "model": "MKS"
+  },
+  "489": {
+    "brand_id": 101,
+    "model_id": 817,
+    "brand": "Lincoln",
+    "model": "MKT"
+  },
+  "490": {
+    "brand_id": 101,
+    "model_id": 818,
+    "brand": "Lincoln",
+    "model": "MKX"
+  },
+  "491": {
+    "brand_id": 101,
+    "model_id": 819,
+    "brand": "Lincoln",
+    "model": "MKZ"
+  },
+  "492": {
+    "brand_id": 101,
+    "model_id": 820,
+    "brand": "Lincoln",
+    "model": "Navigator"
+  },
+  "493": {
+    "brand_id": 141,
+    "model_id": 1820,
+    "brand": "Lotus",
+    "model": "Elise"
+  },
+  "494": {
+    "brand_id": 141,
+    "model_id": 1825,
+    "brand": "Lotus",
+    "model": "Evora"
+  },
+  "495": {
+    "brand_id": 141,
+    "model_id": 1821,
+    "brand": "Lotus",
+    "model": "Exige"
+  },
+  "496": {
+    "brand_id": 133,
+    "model_id": 1604,
+    "brand": "Lotus",
+    "model": "L5"
+  },
+  "497": {
+    "brand_id": 117,
+    "model_id": 1173,
+    "brand": "Maserati",
+    "model": "Alfieri"
+  },
+  "498": {
+    "brand_id": 117,
+    "model_id": 1168,
+    "brand": "Maserati",
+    "model": "Ghibli"
+  },
+  "499": {
+    "brand_id": 117,
+    "model_id": 1170,
+    "brand": "Maserati",
+    "model": "GranCabrio"
+  },
+  "500": {
+    "brand_id": 117,
+    "model_id": 1174,
+    "brand": "Maserati",
+    "model": "GT"
+  },
+  "501": {
+    "brand_id": 117,
+    "model_id": 1169,
+    "brand": "Maserati",
+    "model": "Quattroporte"
+  },
+  "502": {
+    "brand_id": 144,
+    "model_id": 1638,
+    "brand": "Maybach",
+    "model": ""
+  },
+  "503": {
+    "brand_id": 162,
+    "model_id": 1631,
+    "brand": "Mazda",
+    "model": "2"
+  },
+  "504": {
+    "brand_id": 162,
+    "model_id": 1633,
+    "brand": "Mazda",
+    "model": "3"
+  },
+  "505": {
+    "brand_id": 162,
+    "model_id": 1620,
+    "brand": "Mazda",
+    "model": "3 abroad version"
+  },
+  "506": {
+    "brand_id": 162,
+    "model_id": 1634,
+    "brand": "Mazda",
+    "model": "3 Xingcheng hatchback"
+  },
+  "507": {
+    "brand_id": 162,
+    "model_id": 1635,
+    "brand": "Mazda",
+    "model": "3 Xingcheng sedan"
+  },
+  "508": {
+    "brand_id": 162,
+    "model_id": 1629,
+    "brand": "Mazda",
+    "model": "5"
+  },
+  "509": {
+    "brand_id": 162,
+    "model_id": 1614,
+    "brand": "Mazda",
+    "model": "6"
+  },
+  "510": {
+    "brand_id": 162,
+    "model_id": 1610,
+    "brand": "Mazda",
+    "model": "8"
+  },
+  "511": {
+    "brand_id": 162,
+    "model_id": 1609,
+    "brand": "Mazda",
+    "model": "Atenza"
+  },
+  "512": {
+    "brand_id": 162,
+    "model_id": 1615,
+    "brand": "Mazda",
+    "model": "ATENZA"
+  },
+  "513": {
+    "brand_id": 162,
+    "model_id": 1630,
+    "brand": "Mazda",
+    "model": "Axela hatchback"
+  },
+  "514": {
+    "brand_id": 162,
+    "model_id": 1637,
+    "brand": "Mazda",
+    "model": "Axela sedan"
+  },
+  "515": {
+    "brand_id": 162,
+    "model_id": 1636,
+    "brand": "Mazda",
+    "model": "CX-5"
+  },
+  "516": {
+    "brand_id": 162,
+    "model_id": 1618,
+    "brand": "Mazda",
+    "model": "CX-9"
+  },
+  "517": {
+    "brand_id": 162,
+    "model_id": 1611,
+    "brand": "Mazda",
+    "model": "CX7"
+  },
+  "518": {
+    "brand_id": 162,
+    "model_id": 1628,
+    "brand": "Mazda",
+    "model": "Hazumi"
+  },
+  "519": {
+    "brand_id": 162,
+    "model_id": 1619,
+    "brand": "Mazda",
+    "model": "MX-5"
+  },
+  "520": {
+    "brand_id": 162,
+    "model_id": 1612,
+    "brand": "Mazda",
+    "model": "Ruiyi"
+  },
+  "521": {
+    "brand_id": 162,
+    "model_id": 1613,
+    "brand": "Mazda",
+    "model": "Ruiyi coupe"
+  },
+  "522": {
+    "brand_id": 162,
+    "model_id": 1622,
+    "brand": "Mazda",
+    "model": "Takeri"
+  },
+  "523": {
+    "brand_id": 143,
+    "model_id": 1837,
+    "brand": "McLaren",
+    "model": "12C"
+  },
+  "524": {
+    "brand_id": 143,
+    "model_id": 1841,
+    "brand": "McLaren",
+    "model": "650S"
+  },
+  "525": {
+    "brand_id": 143,
+    "model_id": 1838,
+    "brand": "McLaren",
+    "model": "P1"
+  },
+  "526": {
+    "brand_id": 77,
+    "model_id": 147,
+    "brand": "Mercedes-Benz",
+    "model": "A Class"
+  },
+  "527": {
+    "brand_id": 77,
+    "model_id": 128,
+    "brand": "Mercedes-Benz",
+    "model": "A Class AMG"
+  },
+  "528": {
+    "brand_id": 77,
+    "model_id": 142,
+    "brand": "Mercedes-Benz",
+    "model": "AMG GT"
+  },
+  "529": {
+    "brand_id": 77,
+    "model_id": 182,
+    "brand": "Mercedes-Benz",
+    "model": "B Class"
+  },
+  "530": {
+    "brand_id": 77,
+    "model_id": 124,
+    "brand": "Mercedes-Benz",
+    "model": "C Class"
+  },
+  "531": {
+    "brand_id": 77,
+    "model_id": 130,
+    "brand": "Mercedes-Benz",
+    "model": "C Class AMG"
+  },
+  "532": {
+    "brand_id": 77,
+    "model_id": 152,
+    "brand": "Mercedes-Benz",
+    "model": "C Class estate"
+  },
+  "533": {
+    "brand_id": 77,
+    "model_id": 139,
+    "brand": "Mercedes-Benz",
+    "model": "CL Class AMG"
+  },
+  "534": {
+    "brand_id": 77,
+    "model_id": 148,
+    "brand": "Mercedes-Benz",
+    "model": "CLA Class"
+  },
+  "535": {
+    "brand_id": 77,
+    "model_id": 143,
+    "brand": "Mercedes-Benz",
+    "model": "CLA Class AMG"
+  },
+  "536": {
+    "brand_id": 77,
+    "model_id": 149,
+    "brand": "Mercedes-Benz",
+    "model": "CLS Class"
+  },
+  "537": {
+    "brand_id": 77,
+    "model_id": 129,
+    "brand": "Mercedes-Benz",
+    "model": "CLS Class AMG"
+  },
+  "538": {
+    "brand_id": 77,
+    "model_id": 181,
+    "brand": "Mercedes-Benz",
+    "model": "Coupe SUV"
+  },
+  "539": {
+    "brand_id": 77,
+    "model_id": 127,
+    "brand": "Mercedes-Benz",
+    "model": "E Class"
+  },
+  "540": {
+    "brand_id": 77,
+    "model_id": 138,
+    "brand": "Mercedes-Benz",
+    "model": "E Class AMG"
+  },
+  "541": {
+    "brand_id": 77,
+    "model_id": 153,
+    "brand": "Mercedes-Benz",
+    "model": "E Class convertible"
+  },
+  "542": {
+    "brand_id": 77,
+    "model_id": 154,
+    "brand": "Mercedes-Benz",
+    "model": "E Class couple"
+  },
+  "543": {
+    "brand_id": 77,
+    "model_id": 170,
+    "brand": "Mercedes-Benz",
+    "model": "F800"
+  },
+  "544": {
+    "brand_id": 77,
+    "model_id": 157,
+    "brand": "Mercedes-Benz",
+    "model": "G Class"
+  },
+  "545": {
+    "brand_id": 77,
+    "model_id": 132,
+    "brand": "Mercedes-Benz",
+    "model": "G Class AMG"
+  },
+  "546": {
+    "brand_id": 77,
+    "model_id": 156,
+    "brand": "Mercedes-Benz",
+    "model": "GL Class"
+  },
+  "547": {
+    "brand_id": 77,
+    "model_id": 131,
+    "brand": "Mercedes-Benz",
+    "model": "GL Class AMG"
+  },
+  "548": {
+    "brand_id": 77,
+    "model_id": 175,
+    "brand": "Mercedes-Benz",
+    "model": "GLA Class"
+  },
+  "549": {
+    "brand_id": 77,
+    "model_id": 140,
+    "brand": "Mercedes-Benz",
+    "model": "GLA Class AMG"
+  },
+  "550": {
+    "brand_id": 77,
+    "model_id": 126,
+    "brand": "Mercedes-Benz",
+    "model": "GLK Class"
+  },
+  "551": {
+    "brand_id": 77,
+    "model_id": 158,
+    "brand": "Mercedes-Benz",
+    "model": "M Class"
+  },
+  "552": {
+    "brand_id": 77,
+    "model_id": 133,
+    "brand": "Mercedes-Benz",
+    "model": "M Class AMG"
+  },
+  "553": {
+    "brand_id": 77,
+    "model_id": 159,
+    "brand": "Mercedes-Benz",
+    "model": "R Class"
+  },
+  "554": {
+    "brand_id": 77,
+    "model_id": 162,
+    "brand": "Mercedes-Benz",
+    "model": "S Class"
+  },
+  "555": {
+    "brand_id": 77,
+    "model_id": 137,
+    "brand": "Mercedes-Benz",
+    "model": "S Class AMG"
+  },
+  "556": {
+    "brand_id": 77,
+    "model_id": 163,
+    "brand": "Mercedes-Benz",
+    "model": "S Class hybird"
+  },
+  "557": {
+    "brand_id": 77,
+    "model_id": 161,
+    "brand": "Mercedes-Benz",
+    "model": "SL Class"
+  },
+  "558": {
+    "brand_id": 77,
+    "model_id": 136,
+    "brand": "Mercedes-Benz",
+    "model": "SL Class AMG"
+  },
+  "559": {
+    "brand_id": 77,
+    "model_id": 160,
+    "brand": "Mercedes-Benz",
+    "model": "SLK Class"
+  },
+  "560": {
+    "brand_id": 77,
+    "model_id": 134,
+    "brand": "Mercedes-Benz",
+    "model": "SLK Class AMG"
+  },
+  "561": {
+    "brand_id": 77,
+    "model_id": 135,
+    "brand": "Mercedes-Benz",
+    "model": "SLS Class AMG"
+  },
+  "562": {
+    "brand_id": 77,
+    "model_id": 144,
+    "brand": "Mercedes-Benz",
+    "model": "Sprinter"
+  },
+  "563": {
+    "brand_id": 77,
+    "model_id": 164,
+    "brand": "Mercedes-Benz",
+    "model": "Sprinter abroad version"
+  },
+  "564": {
+    "brand_id": 77,
+    "model_id": 184,
+    "brand": "Mercedes-Benz",
+    "model": "V Class"
+  },
+  "565": {
+    "brand_id": 77,
+    "model_id": 146,
+    "brand": "Mercedes-Benz",
+    "model": "Wei Ting"
+  },
+  "566": {
+    "brand_id": 77,
+    "model_id": 145,
+    "brand": "Mercedes-Benz",
+    "model": "Wei Yanuo"
+  },
+  "567": {
+    "brand_id": 14,
+    "model_id": 1836,
+    "brand": "MG",
+    "model": "3"
+  },
+  "568": {
+    "brand_id": 14,
+    "model_id": 1827,
+    "brand": "MG",
+    "model": "3 SW"
+  },
+  "569": {
+    "brand_id": 14,
+    "model_id": 1829,
+    "brand": "MG",
+    "model": "5"
+  },
+  "570": {
+    "brand_id": 14,
+    "model_id": 1831,
+    "brand": "MG",
+    "model": "6 hatchback"
+  },
+  "571": {
+    "brand_id": 14,
+    "model_id": 1832,
+    "brand": "MG",
+    "model": "7"
+  },
+  "572": {
+    "brand_id": 15,
+    "model_id": 827,
+    "brand": "MINI",
+    "model": ""
+  },
+  "573": {
+    "brand_id": 15,
+    "model_id": 839,
+    "brand": "MINI",
+    "model": "CABRIO"
+  },
+  "574": {
+    "brand_id": 15,
+    "model_id": 828,
+    "brand": "MINI",
+    "model": "CLUBMAN"
+  },
+  "575": {
+    "brand_id": 15,
+    "model_id": 835,
+    "brand": "MINI",
+    "model": "CLUBVAN"
+  },
+  "576": {
+    "brand_id": 15,
+    "model_id": 829,
+    "brand": "MINI",
+    "model": "COUNTRYMAN"
+  },
+  "577": {
+    "brand_id": 15,
+    "model_id": 830,
+    "brand": "MINI",
+    "model": "COUPE"
+  },
+  "578": {
+    "brand_id": 15,
+    "model_id": 840,
+    "brand": "MINI",
+    "model": "JCW"
+  },
+  "579": {
+    "brand_id": 15,
+    "model_id": 841,
+    "brand": "MINI",
+    "model": "JCW COUNTRYMAN"
+  },
+  "580": {
+    "brand_id": 15,
+    "model_id": 842,
+    "brand": "MINI",
+    "model": "JCW COUPE"
+  },
+  "581": {
+    "brand_id": 15,
+    "model_id": 843,
+    "brand": "MINI",
+    "model": "JCW PACEMAN"
+  },
+  "582": {
+    "brand_id": 15,
+    "model_id": 831,
+    "brand": "MINI",
+    "model": "PACEMAN"
+  },
+  "583": {
+    "brand_id": 15,
+    "model_id": 832,
+    "brand": "MINI",
+    "model": "ROADSTER"
+  },
+  "584": {
+    "brand_id": 15,
+    "model_id": 838,
+    "brand": "MINI",
+    "model": "Superleggera"
+  },
+  "585": {
+    "brand_id": 28,
+    "model_id": 1864,
+    "brand": "Mitsubishi",
+    "model": "ASX"
+  },
+  "586": {
+    "brand_id": 28,
+    "model_id": 1874,
+    "brand": "Mitsubishi",
+    "model": "ASX abroad version"
+  },
+  "587": {
+    "brand_id": 28,
+    "model_id": 1873,
+    "brand": "Mitsubishi",
+    "model": "Colt"
+  },
+  "588": {
+    "brand_id": 28,
+    "model_id": 1871,
+    "brand": "Mitsubishi",
+    "model": "Evo"
+  },
+  "589": {
+    "brand_id": 28,
+    "model_id": 1886,
+    "brand": "Mitsubishi",
+    "model": "Fortis"
+  },
+  "590": {
+    "brand_id": 28,
+    "model_id": 1891,
+    "brand": "Mitsubishi",
+    "model": "Galant"
+  },
+  "591": {
+    "brand_id": 28,
+    "model_id": 1867,
+    "brand": "Mitsubishi",
+    "model": "Grandis"
+  },
+  "592": {
+    "brand_id": 28,
+    "model_id": 1872,
+    "brand": "Mitsubishi",
+    "model": "i"
+  },
+  "593": {
+    "brand_id": 28,
+    "model_id": 1888,
+    "brand": "Mitsubishi",
+    "model": "Lancer"
+  },
+  "594": {
+    "brand_id": 28,
+    "model_id": 1889,
+    "brand": "Mitsubishi",
+    "model": "Lancer EX"
+  },
+  "595": {
+    "brand_id": 28,
+    "model_id": 1876,
+    "brand": "Mitsubishi",
+    "model": "Mirage"
+  },
+  "596": {
+    "brand_id": 28,
+    "model_id": 1885,
+    "brand": "Mitsubishi",
+    "model": "Outlander abroad version"
+  },
+  "597": {
+    "brand_id": 28,
+    "model_id": 1866,
+    "brand": "Mitsubishi",
+    "model": "Pajero"
+  },
+  "598": {
+    "brand_id": 28,
+    "model_id": 1865,
+    "brand": "Mitsubishi",
+    "model": "Pajero Sport"
+  },
+  "599": {
+    "brand_id": 28,
+    "model_id": 1882,
+    "brand": "Mitsubishi",
+    "model": "XR-PHEV"
+  },
+  "600": {
+    "brand_id": 28,
+    "model_id": 1887,
+    "brand": "Mitsubishi",
+    "model": "Zinger"
+  },
+  "601": {
+    "brand_id": 93,
+    "model_id": 846,
+    "brand": "Morgan",
+    "model": "Plus 8"
+  },
+  "602": {
+    "brand_id": 97,
+    "model_id": 871,
+    "brand": "Nissan",
+    "model": "370Z"
+  },
+  "603": {
+    "brand_id": 97,
+    "model_id": 909,
+    "brand": "Nissan",
+    "model": "Altima"
+  },
+  "604": {
+    "brand_id": 97,
+    "model_id": 870,
+    "brand": "Nissan",
+    "model": "Bilian"
+  },
+  "605": {
+    "brand_id": 97,
+    "model_id": 875,
+    "brand": "Nissan",
+    "model": "Cube"
+  },
+  "606": {
+    "brand_id": 97,
+    "model_id": 872,
+    "brand": "Nissan",
+    "model": "GT-R"
+  },
+  "607": {
+    "brand_id": 97,
+    "model_id": 906,
+    "brand": "Nissan",
+    "model": "IDX"
+  },
+  "608": {
+    "brand_id": 97,
+    "model_id": 873,
+    "brand": "Nissan",
+    "model": "Juke"
+  },
+  "609": {
+    "brand_id": 97,
+    "model_id": 907,
+    "brand": "Nissan",
+    "model": "Lannia Concept"
+  },
+  "610": {
+    "brand_id": 97,
+    "model_id": 877,
+    "brand": "Nissan",
+    "model": "Leaf"
+  },
+  "611": {
+    "brand_id": 97,
+    "model_id": 860,
+    "brand": "Nissan",
+    "model": "Livina"
+  },
+  "612": {
+    "brand_id": 97,
+    "model_id": 864,
+    "brand": "Nissan",
+    "model": "Ma Chi"
+  },
+  "613": {
+    "brand_id": 97,
+    "model_id": 852,
+    "brand": "Nissan",
+    "model": "Murano"
+  },
+  "614": {
+    "brand_id": 97,
+    "model_id": 908,
+    "brand": "Nissan",
+    "model": "Navara"
+  },
+  "615": {
+    "brand_id": 97,
+    "model_id": 868,
+    "brand": "Nissan",
+    "model": "NV200"
+  },
+  "616": {
+    "brand_id": 97,
+    "model_id": 865,
+    "brand": "Nissan",
+    "model": "Paladin"
+  },
+  "617": {
+    "brand_id": 97,
+    "model_id": 879,
+    "brand": "Nissan",
+    "model": "Pathfinder"
+  },
+  "618": {
+    "brand_id": 97,
+    "model_id": 874,
+    "brand": "Nissan",
+    "model": "Patrol"
+  },
+  "619": {
+    "brand_id": 97,
+    "model_id": 903,
+    "brand": "Nissan",
+    "model": "Pulsar"
+  },
+  "620": {
+    "brand_id": 97,
+    "model_id": 859,
+    "brand": "Nissan",
+    "model": "Qashqai"
+  },
+  "621": {
+    "brand_id": 97,
+    "model_id": 905,
+    "brand": "Nissan",
+    "model": "Quest"
+  },
+  "622": {
+    "brand_id": 97,
+    "model_id": 899,
+    "brand": "Nissan",
+    "model": "Rogue"
+  },
+  "623": {
+    "brand_id": 97,
+    "model_id": 892,
+    "brand": "Nissan",
+    "model": "Sentra"
+  },
+  "624": {
+    "brand_id": 97,
+    "model_id": 902,
+    "brand": "Nissan",
+    "model": "Sports Sedan"
+  },
+  "625": {
+    "brand_id": 97,
+    "model_id": 857,
+    "brand": "Nissan",
+    "model": "Sunshine"
+  },
+  "626": {
+    "brand_id": 97,
+    "model_id": 856,
+    "brand": "Nissan",
+    "model": "Sylphy"
+  },
+  "627": {
+    "brand_id": 97,
+    "model_id": 854,
+    "brand": "Nissan",
+    "model": "Teana"
+  },
+  "628": {
+    "brand_id": 97,
+    "model_id": 861,
+    "brand": "Nissan",
+    "model": "Tiida"
+  },
+  "629": {
+    "brand_id": 97,
+    "model_id": 894,
+    "brand": "Nissan",
+    "model": "Titan"
+  },
+  "630": {
+    "brand_id": 97,
+    "model_id": 883,
+    "brand": "Nissan",
+    "model": "Versa"
+  },
+  "631": {
+    "brand_id": 97,
+    "model_id": 853,
+    "brand": "Nissan",
+    "model": "X-Trail"
+  },
+  "632": {
+    "brand_id": 97,
+    "model_id": 858,
+    "brand": "Nissan",
+    "model": "Yida"
+  },
+  "633": {
+    "brand_id": 103,
+    "model_id": 1851,
+    "brand": "Opel",
+    "model": "Adam"
+  },
+  "634": {
+    "brand_id": 103,
+    "model_id": 1842,
+    "brand": "Opel",
+    "model": "Antara"
+  },
+  "635": {
+    "brand_id": 103,
+    "model_id": 1852,
+    "brand": "Opel",
+    "model": "Cascada"
+  },
+  "636": {
+    "brand_id": 103,
+    "model_id": 1849,
+    "brand": "Opel",
+    "model": "CORSA"
+  },
+  "637": {
+    "brand_id": 103,
+    "model_id": 1845,
+    "brand": "Opel",
+    "model": "GTC hatchback"
+  },
+  "638": {
+    "brand_id": 103,
+    "model_id": 1847,
+    "brand": "Opel",
+    "model": "Insignia"
+  },
+  "639": {
+    "brand_id": 103,
+    "model_id": 1856,
+    "brand": "Opel",
+    "model": "Meriva"
+  },
+  "640": {
+    "brand_id": 103,
+    "model_id": 1854,
+    "brand": "Opel",
+    "model": "Mokka"
+  },
+  "641": {
+    "brand_id": 103,
+    "model_id": 1843,
+    "brand": "Opel",
+    "model": "Zafira"
+  },
+  "642": {
+    "brand_id": 86,
+    "model_id": 1315,
+    "brand": "Pagani",
+    "model": "Huayra"
+  },
+  "643": {
+    "brand_id": 86,
+    "model_id": 1314,
+    "brand": "Pagani",
+    "model": "Zonda"
+  },
+  "644": {
+    "brand_id": 102,
+    "model_id": 271,
+    "brand": "Peugeot",
+    "model": "107"
+  },
+  "645": {
+    "brand_id": 102,
+    "model_id": 291,
+    "brand": "Peugeot",
+    "model": "108"
+  },
+  "646": {
+    "brand_id": 102,
+    "model_id": 254,
+    "brand": "Peugeot",
+    "model": "2008"
+  },
+  "647": {
+    "brand_id": 102,
+    "model_id": 255,
+    "brand": "Peugeot",
+    "model": "207 hatchback"
+  },
+  "648": {
+    "brand_id": 102,
+    "model_id": 256,
+    "brand": "Peugeot",
+    "model": "207 sedan"
+  },
+  "649": {
+    "brand_id": 102,
+    "model_id": 266,
+    "brand": "Peugeot",
+    "model": "207CC"
+  },
+  "650": {
+    "brand_id": 102,
+    "model_id": 273,
+    "brand": "Peugeot",
+    "model": "208"
+  },
+  "651": {
+    "brand_id": 102,
+    "model_id": 257,
+    "brand": "Peugeot",
+    "model": "3008"
+  },
+  "652": {
+    "brand_id": 102,
+    "model_id": 258,
+    "brand": "Peugeot",
+    "model": "301"
+  },
+  "653": {
+    "brand_id": 102,
+    "model_id": 259,
+    "brand": "Peugeot",
+    "model": "307 hatchback"
+  },
+  "654": {
+    "brand_id": 102,
+    "model_id": 260,
+    "brand": "Peugeot",
+    "model": "307 sedan"
+  },
+  "655": {
+    "brand_id": 102,
+    "model_id": 261,
+    "brand": "Peugeot",
+    "model": "308"
+  },
+  "656": {
+    "brand_id": 102,
+    "model_id": 280,
+    "brand": "Peugeot",
+    "model": "308 abroad version"
+  },
+  "657": {
+    "brand_id": 102,
+    "model_id": 293,
+    "brand": "Peugeot",
+    "model": "308CC"
+  },
+  "658": {
+    "brand_id": 102,
+    "model_id": 267,
+    "brand": "Peugeot",
+    "model": "308SW"
+  },
+  "659": {
+    "brand_id": 102,
+    "model_id": 268,
+    "brand": "Peugeot",
+    "model": "4008"
+  },
+  "660": {
+    "brand_id": 102,
+    "model_id": 262,
+    "brand": "Peugeot",
+    "model": "408"
+  },
+  "661": {
+    "brand_id": 102,
+    "model_id": 282,
+    "brand": "Peugeot",
+    "model": "5008"
+  },
+  "662": {
+    "brand_id": 102,
+    "model_id": 263,
+    "brand": "Peugeot",
+    "model": "508"
+  },
+  "663": {
+    "brand_id": 102,
+    "model_id": 272,
+    "brand": "Peugeot",
+    "model": "508 abroad version"
+  },
+  "664": {
+    "brand_id": 102,
+    "model_id": 265,
+    "brand": "Peugeot",
+    "model": "CROSS 307"
+  },
+  "665": {
+    "brand_id": 102,
+    "model_id": 269,
+    "brand": "Peugeot",
+    "model": "RCZ"
+  },
+  "666": {
+    "brand_id": 48,
+    "model_id": 319,
+    "brand": "Porsche",
+    "model": "911"
+  },
+  "667": {
+    "brand_id": 48,
+    "model_id": 320,
+    "brand": "Porsche",
+    "model": "918"
+  },
+  "668": {
+    "brand_id": 48,
+    "model_id": 325,
+    "brand": "Porsche",
+    "model": "919"
+  },
+  "669": {
+    "brand_id": 48,
+    "model_id": 315,
+    "brand": "Porsche",
+    "model": "Boxster"
+  },
+  "670": {
+    "brand_id": 48,
+    "model_id": 321,
+    "brand": "Porsche",
+    "model": "Canyenne"
+  },
+  "671": {
+    "brand_id": 48,
+    "model_id": 323,
+    "brand": "Porsche",
+    "model": "Carrera GT"
+  },
+  "672": {
+    "brand_id": 48,
+    "model_id": 326,
+    "brand": "Porsche",
+    "model": "Cayman"
+  },
+  "673": {
+    "brand_id": 48,
+    "model_id": 316,
+    "brand": "Porsche",
+    "model": "Macan"
+  },
+  "674": {
+    "brand_id": 48,
+    "model_id": 317,
+    "brand": "Porsche",
+    "model": "Panamera"
+  },
+  "675": {
+    "brand_id": 160,
+    "model_id": 793,
+    "brand": "Renault",
+    "model": "Cleo"
+  },
+  "676": {
+    "brand_id": 160,
+    "model_id": 787,
+    "brand": "Renault",
+    "model": "Koleos"
+  },
+  "677": {
+    "brand_id": 160,
+    "model_id": 788,
+    "brand": "Renault",
+    "model": "Laguna"
+  },
+  "678": {
+    "brand_id": 160,
+    "model_id": 792,
+    "brand": "Renault",
+    "model": "Latitude"
+  },
+  "679": {
+    "brand_id": 160,
+    "model_id": 790,
+    "brand": "Renault",
+    "model": "Megan Aa"
+  },
+  "680": {
+    "brand_id": 160,
+    "model_id": 802,
+    "brand": "Renault",
+    "model": "Reno Alpine"
+  },
+  "681": {
+    "brand_id": 160,
+    "model_id": 795,
+    "brand": "Renault",
+    "model": "Reno Captur"
+  },
+  "682": {
+    "brand_id": 160,
+    "model_id": 799,
+    "brand": "Renault",
+    "model": "Reno Symbol"
+  },
+  "683": {
+    "brand_id": 160,
+    "model_id": 803,
+    "brand": "Renault",
+    "model": "Reno Twin-Run"
+  },
+  "684": {
+    "brand_id": 160,
+    "model_id": 801,
+    "brand": "Renault",
+    "model": "Reno Twingo"
+  },
+  "685": {
+    "brand_id": 160,
+    "model_id": 798,
+    "brand": "Renault",
+    "model": "Reno Twizy"
+  },
+  "686": {
+    "brand_id": 160,
+    "model_id": 794,
+    "brand": "Renault",
+    "model": "Reno Wind"
+  },
+  "687": {
+    "brand_id": 160,
+    "model_id": 797,
+    "brand": "Renault",
+    "model": "Reno ZOE"
+  },
+  "688": {
+    "brand_id": 160,
+    "model_id": 807,
+    "brand": "Renault",
+    "model": "Scenic"
+  },
+  "689": {
+    "brand_id": 160,
+    "model_id": 791,
+    "brand": "Renault",
+    "model": "Tower Siman"
+  },
+  "690": {
+    "brand_id": 160,
+    "model_id": 786,
+    "brand": "Renault",
+    "model": "Wind Lang"
+  },
+  "691": {
+    "brand_id": 57,
+    "model_id": 1606,
+    "brand": "Rolls-Royce",
+    "model": "Ghost"
+  },
+  "692": {
+    "brand_id": 57,
+    "model_id": 1608,
+    "brand": "Rolls-Royce",
+    "model": "Phantom"
+  },
+  "693": {
+    "brand_id": 57,
+    "model_id": 1607,
+    "brand": "Rolls-Royce",
+    "model": "Wraith"
+  },
+  "694": {
+    "brand_id": 135,
+    "model_id": 945,
+    "brand": "Saab",
+    "model": "95"
+  },
+  "695": {
+    "brand_id": 128,
+    "model_id": 1892,
+    "brand": "Saab",
+    "model": "D50"
+  },
+  "696": {
+    "brand_id": 128,
+    "model_id": 1894,
+    "brand": "Saab",
+    "model": "D60"
+  },
+  "697": {
+    "brand_id": 128,
+    "model_id": 1893,
+    "brand": "Saab",
+    "model": "D70"
+  },
+  "698": {
+    "brand_id": 21,
+    "model_id": 1307,
+    "brand": "Scion",
+    "model": "FR-S"
+  },
+  "699": {
+    "brand_id": 21,
+    "model_id": 1303,
+    "brand": "Scion",
+    "model": "iQ"
+  },
+  "700": {
+    "brand_id": 21,
+    "model_id": 1302,
+    "brand": "Scion",
+    "model": "tC"
+  },
+  "701": {
+    "brand_id": 21,
+    "model_id": 1304,
+    "brand": "Scion",
+    "model": "xB"
+  },
+  "702": {
+    "brand_id": 21,
+    "model_id": 1306,
+    "brand": "Scion",
+    "model": "xD"
+  },
+  "703": {
+    "brand_id": 137,
+    "model_id": 1728,
+    "brand": "Seat",
+    "model": "Alhambra"
+  },
+  "704": {
+    "brand_id": 137,
+    "model_id": 1733,
+    "brand": "Seat",
+    "model": "ALTEA"
+  },
+  "705": {
+    "brand_id": 137,
+    "model_id": 1734,
+    "brand": "Seat",
+    "model": "EXEO"
+  },
+  "706": {
+    "brand_id": 137,
+    "model_id": 1737,
+    "brand": "Seat",
+    "model": "IBE"
+  },
+  "707": {
+    "brand_id": 137,
+    "model_id": 1731,
+    "brand": "Seat",
+    "model": "Ibiza"
+  },
+  "708": {
+    "brand_id": 137,
+    "model_id": 1730,
+    "brand": "Seat",
+    "model": "LEON"
+  },
+  "709": {
+    "brand_id": 137,
+    "model_id": 1736,
+    "brand": "Seat",
+    "model": "Mii"
+  },
+  "710": {
+    "brand_id": 95,
+    "model_id": 920,
+    "brand": "Skoda",
+    "model": "Citigo"
+  },
+  "711": {
+    "brand_id": 95,
+    "model_id": 910,
+    "brand": "Skoda",
+    "model": "Fabia"
+  },
+  "712": {
+    "brand_id": 95,
+    "model_id": 915,
+    "brand": "Skoda",
+    "model": "Haorui"
+  },
+  "713": {
+    "brand_id": 95,
+    "model_id": 911,
+    "brand": "Skoda",
+    "model": "Octavia"
+  },
+  "714": {
+    "brand_id": 95,
+    "model_id": 924,
+    "brand": "Skoda",
+    "model": "Octavia abroad version"
+  },
+  "715": {
+    "brand_id": 95,
+    "model_id": 912,
+    "brand": "Skoda",
+    "model": "Octavia RS"
+  },
+  "716": {
+    "brand_id": 95,
+    "model_id": 917,
+    "brand": "Skoda",
+    "model": "Rapid"
+  },
+  "717": {
+    "brand_id": 95,
+    "model_id": 916,
+    "brand": "Skoda",
+    "model": "Rapid Spaceback"
+  },
+  "718": {
+    "brand_id": 95,
+    "model_id": 923,
+    "brand": "Skoda",
+    "model": "Roomster"
+  },
+  "719": {
+    "brand_id": 95,
+    "model_id": 913,
+    "brand": "Skoda",
+    "model": "Superb"
+  },
+  "720": {
+    "brand_id": 95,
+    "model_id": 932,
+    "brand": "Skoda",
+    "model": "Superb Derivative"
+  },
+  "721": {
+    "brand_id": 95,
+    "model_id": 914,
+    "brand": "Skoda",
+    "model": "Yeti"
+  },
+  "722": {
+    "brand_id": 95,
+    "model_id": 919,
+    "brand": "Skoda",
+    "model": "Yeti abroad version"
+  },
+  "723": {
+    "brand_id": 26,
+    "model_id": 1696,
+    "brand": "smart",
+    "model": "forfour"
+  },
+  "724": {
+    "brand_id": 26,
+    "model_id": 1694,
+    "brand": "smart",
+    "model": "forjeremy"
+  },
+  "725": {
+    "brand_id": 26,
+    "model_id": 1692,
+    "brand": "smart",
+    "model": "fortwo"
+  },
+  "726": {
+    "brand_id": 68,
+    "model_id": 933,
+    "brand": "SsangYong",
+    "model": "Actyon"
+  },
+  "727": {
+    "brand_id": 68,
+    "model_id": 938,
+    "brand": "SsangYong",
+    "model": "Chairman"
+  },
+  "728": {
+    "brand_id": 68,
+    "model_id": 944,
+    "brand": "SsangYong",
+    "model": "Korando"
+  },
+  "729": {
+    "brand_id": 68,
+    "model_id": 937,
+    "brand": "SsangYong",
+    "model": "Kyron"
+  },
+  "730": {
+    "brand_id": 68,
+    "model_id": 934,
+    "brand": "SsangYong",
+    "model": "Rexton"
+  },
+  "731": {
+    "brand_id": 68,
+    "model_id": 935,
+    "brand": "SsangYong",
+    "model": "Rexton W"
+  },
+  "732": {
+    "brand_id": 68,
+    "model_id": 936,
+    "brand": "SsangYong",
+    "model": "Rodius"
+  },
+  "733": {
+    "brand_id": 94,
+    "model_id": 1234,
+    "brand": "Subaru",
+    "model": "BRZ"
+  },
+  "734": {
+    "brand_id": 94,
+    "model_id": 1233,
+    "brand": "Subaru",
+    "model": "Forester"
+  },
+  "735": {
+    "brand_id": 94,
+    "model_id": 1236,
+    "brand": "Subaru",
+    "model": "Impreza hatchback"
+  },
+  "736": {
+    "brand_id": 94,
+    "model_id": 1237,
+    "brand": "Subaru",
+    "model": "Impreza sedan"
+  },
+  "737": {
+    "brand_id": 94,
+    "model_id": 1231,
+    "brand": "Subaru",
+    "model": "Legacy"
+  },
+  "738": {
+    "brand_id": 94,
+    "model_id": 1230,
+    "brand": "Subaru",
+    "model": "Outback"
+  },
+  "739": {
+    "brand_id": 94,
+    "model_id": 1243,
+    "brand": "Subaru",
+    "model": "Tribeca"
+  },
+  "740": {
+    "brand_id": 94,
+    "model_id": 1239,
+    "brand": "Subaru",
+    "model": "Viziv"
+  },
+  "741": {
+    "brand_id": 94,
+    "model_id": 1240,
+    "brand": "Subaru",
+    "model": "WRX"
+  },
+  "742": {
+    "brand_id": 94,
+    "model_id": 1235,
+    "brand": "Subaru",
+    "model": "XV"
+  },
+  "743": {
+    "brand_id": 149,
+    "model_id": 1792,
+    "brand": "Suzuki",
+    "model": "Alivio"
+  },
+  "744": {
+    "brand_id": 149,
+    "model_id": 1790,
+    "brand": "Suzuki",
+    "model": "Alto"
+  },
+  "745": {
+    "brand_id": 149,
+    "model_id": 1812,
+    "brand": "Suzuki",
+    "model": "Bei Douxing"
+  },
+  "746": {
+    "brand_id": 149,
+    "model_id": 1791,
+    "brand": "Suzuki",
+    "model": "Cultus"
+  },
+  "747": {
+    "brand_id": 149,
+    "model_id": 1797,
+    "brand": "Suzuki",
+    "model": "Fengyu"
+  },
+  "748": {
+    "brand_id": 149,
+    "model_id": 1798,
+    "brand": "Suzuki",
+    "model": "Grand Vitara"
+  },
+  "749": {
+    "brand_id": 149,
+    "model_id": 1811,
+    "brand": "Suzuki",
+    "model": "Jimny"
+  },
+  "750": {
+    "brand_id": 149,
+    "model_id": 1799,
+    "brand": "Suzuki",
+    "model": "Kazishi"
+  },
+  "751": {
+    "brand_id": 149,
+    "model_id": 1818,
+    "brand": "Suzuki",
+    "model": "Landy"
+  },
+  "752": {
+    "brand_id": 149,
+    "model_id": 1815,
+    "brand": "Suzuki",
+    "model": "Liana hatchback"
+  },
+  "753": {
+    "brand_id": 149,
+    "model_id": 1817,
+    "brand": "Suzuki",
+    "model": "Splash"
+  },
+  "754": {
+    "brand_id": 149,
+    "model_id": 1800,
+    "brand": "Suzuki",
+    "model": "Swift"
+  },
+  "755": {
+    "brand_id": 149,
+    "model_id": 1793,
+    "brand": "Suzuki",
+    "model": "Tianyu SX4 hatchback"
+  },
+  "756": {
+    "brand_id": 149,
+    "model_id": 1795,
+    "brand": "Suzuki",
+    "model": "Tianyushangyue"
+  },
+  "757": {
+    "brand_id": 149,
+    "model_id": 1796,
+    "brand": "Suzuki",
+    "model": "Yuyan"
+  },
+  "758": {
+    "brand_id": 22,
+    "model_id": 948,
+    "brand": "Tesla",
+    "model": "MODEL S"
+  },
+  "759": {
+    "brand_id": 22,
+    "model_id": 949,
+    "brand": "Tesla",
+    "model": "Roadster"
+  },
+  "760": {
+    "brand_id": 39,
+    "model_id": 1334,
+    "brand": "Toyota",
+    "model": "4 Rinner"
+  },
+  "761": {
+    "brand_id": 39,
+    "model_id": 1335,
+    "brand": "Toyota",
+    "model": "86"
+  },
+  "762": {
+    "brand_id": 39,
+    "model_id": 1333,
+    "brand": "Toyota",
+    "model": "Alphard"
+  },
+  "763": {
+    "brand_id": 39,
+    "model_id": 1350,
+    "brand": "Toyota",
+    "model": "Auris"
+  },
+  "764": {
+    "brand_id": 39,
+    "model_id": 1345,
+    "brand": "Toyota",
+    "model": "Avensis"
+  },
+  "765": {
+    "brand_id": 39,
+    "model_id": 1344,
+    "brand": "Toyota",
+    "model": "Aygo"
+  },
+  "766": {
+    "brand_id": 39,
+    "model_id": 1386,
+    "brand": "Toyota",
+    "model": "Camry"
+  },
+  "767": {
+    "brand_id": 39,
+    "model_id": 1323,
+    "brand": "Toyota",
+    "model": "Corolla"
+  },
+  "768": {
+    "brand_id": 39,
+    "model_id": 1322,
+    "brand": "Toyota",
+    "model": "Crown"
+  },
+  "769": {
+    "brand_id": 39,
+    "model_id": 1390,
+    "brand": "Toyota",
+    "model": "EZ"
+  },
+  "770": {
+    "brand_id": 39,
+    "model_id": 1331,
+    "brand": "Toyota",
+    "model": "FJ Cruiser"
+  },
+  "771": {
+    "brand_id": 39,
+    "model_id": 1372,
+    "brand": "Toyota",
+    "model": "FT-1"
+  },
+  "772": {
+    "brand_id": 39,
+    "model_id": 1356,
+    "brand": "Toyota",
+    "model": "FT-86"
+  },
+  "773": {
+    "brand_id": 39,
+    "model_id": 1392,
+    "brand": "Toyota",
+    "model": "Highlander"
+  },
+  "774": {
+    "brand_id": 39,
+    "model_id": 1358,
+    "brand": "Toyota",
+    "model": "Highlander abroad version"
+  },
+  "775": {
+    "brand_id": 39,
+    "model_id": 1361,
+    "brand": "Toyota",
+    "model": "Hilux"
+  },
+  "776": {
+    "brand_id": 39,
+    "model_id": 1330,
+    "brand": "Toyota",
+    "model": "Huaguan"
+  },
+  "777": {
+    "brand_id": 39,
+    "model_id": 1343,
+    "brand": "Toyota",
+    "model": "IQ"
+  },
+  "778": {
+    "brand_id": 39,
+    "model_id": 1325,
+    "brand": "Toyota",
+    "model": "Lcruiser"
+  },
+  "779": {
+    "brand_id": 39,
+    "model_id": 1388,
+    "brand": "Toyota",
+    "model": "Levin"
+  },
+  "780": {
+    "brand_id": 39,
+    "model_id": 1374,
+    "brand": "Toyota",
+    "model": "Matrix"
+  },
+  "781": {
+    "brand_id": 39,
+    "model_id": 1326,
+    "brand": "Toyota",
+    "model": "Prado"
+  },
+  "782": {
+    "brand_id": 39,
+    "model_id": 1341,
+    "brand": "Toyota",
+    "model": "Previa"
+  },
+  "783": {
+    "brand_id": 39,
+    "model_id": 1327,
+    "brand": "Toyota",
+    "model": "Prius"
+  },
+  "784": {
+    "brand_id": 39,
+    "model_id": 1321,
+    "brand": "Toyota",
+    "model": "RAV4"
+  },
+  "785": {
+    "brand_id": 39,
+    "model_id": 1328,
+    "brand": "Toyota",
+    "model": "Reiz"
+  },
+  "786": {
+    "brand_id": 39,
+    "model_id": 1342,
+    "brand": "Toyota",
+    "model": "Saina"
+  },
+  "787": {
+    "brand_id": 39,
+    "model_id": 1336,
+    "brand": "Toyota",
+    "model": "Sequoia"
+  },
+  "788": {
+    "brand_id": 39,
+    "model_id": 1363,
+    "brand": "Toyota",
+    "model": "Tacoma"
+  },
+  "789": {
+    "brand_id": 39,
+    "model_id": 1349,
+    "brand": "Toyota",
+    "model": "Undra"
+  },
+  "790": {
+    "brand_id": 39,
+    "model_id": 1375,
+    "brand": "Toyota",
+    "model": "Urban Cruiser"
+  },
+  "791": {
+    "brand_id": 39,
+    "model_id": 1332,
+    "brand": "Toyota",
+    "model": "Venza"
+  },
+  "792": {
+    "brand_id": 39,
+    "model_id": 1346,
+    "brand": "Toyota",
+    "model": "Verso"
+  },
+  "793": {
+    "brand_id": 39,
+    "model_id": 1329,
+    "brand": "Toyota",
+    "model": "Vios"
+  },
+  "794": {
+    "brand_id": 39,
+    "model_id": 1389,
+    "brand": "Toyota",
+    "model": "Yaris"
+  },
+  "795": {
+    "brand_id": 39,
+    "model_id": 1385,
+    "brand": "Toyota",
+    "model": "YARiS L"
+  },
+  "796": {
+    "brand_id": 39,
+    "model_id": 1337,
+    "brand": "Toyota",
+    "model": "Zelas"
+  },
+  "797": {
+    "brand_id": 39,
+    "model_id": 1370,
+    "brand": "Toyota",
+    "model": "丰田Avalon"
+  },
+  "798": {
+    "brand_id": 110,
+    "model_id": 1093,
+    "brand": "Vauxhall",
+    "model": "Adam"
+  },
+  "799": {
+    "brand_id": 110,
+    "model_id": 1100,
+    "brand": "Vauxhall",
+    "model": "Astra"
+  },
+  "800": {
+    "brand_id": 110,
+    "model_id": 1094,
+    "brand": "Vauxhall",
+    "model": "Cascada"
+  },
+  "801": {
+    "brand_id": 110,
+    "model_id": 1095,
+    "brand": "Vauxhall",
+    "model": "Corsa"
+  },
+  "802": {
+    "brand_id": 110,
+    "model_id": 1096,
+    "brand": "Vauxhall",
+    "model": "Insignia"
+  },
+  "803": {
+    "brand_id": 110,
+    "model_id": 1099,
+    "brand": "Vauxhall",
+    "model": "VXR8"
+  },
+  "804": {
+    "brand_id": 73,
+    "model_id": 474,
+    "brand": "Volkswagen",
+    "model": "Amarok Pickup"
+  },
+  "805": {
+    "brand_id": 73,
+    "model_id": 461,
+    "brand": "Volkswagen",
+    "model": "Beetle"
+  },
+  "806": {
+    "brand_id": 73,
+    "model_id": 500,
+    "brand": "Volkswagen",
+    "model": "Bora"
+  },
+  "807": {
+    "brand_id": 73,
+    "model_id": 498,
+    "brand": "Volkswagen",
+    "model": "Caddy abroad version"
+  },
+  "808": {
+    "brand_id": 73,
+    "model_id": 462,
+    "brand": "Volkswagen",
+    "model": "Caravelle"
+  },
+  "809": {
+    "brand_id": 73,
+    "model_id": 508,
+    "brand": "Volkswagen",
+    "model": "CC"
+  },
+  "810": {
+    "brand_id": 73,
+    "model_id": 475,
+    "brand": "Volkswagen",
+    "model": "Cross Coupe"
+  },
+  "811": {
+    "brand_id": 73,
+    "model_id": 438,
+    "brand": "Volkswagen",
+    "model": "Cross Lavida"
+  },
+  "812": {
+    "brand_id": 73,
+    "model_id": 434,
+    "brand": "Volkswagen",
+    "model": "Cross Polo"
+  },
+  "813": {
+    "brand_id": 73,
+    "model_id": 478,
+    "brand": "Volkswagen",
+    "model": "CrossBlue"
+  },
+  "814": {
+    "brand_id": 73,
+    "model_id": 453,
+    "brand": "Volkswagen",
+    "model": "Eos"
+  },
+  "815": {
+    "brand_id": 73,
+    "model_id": 497,
+    "brand": "Volkswagen",
+    "model": "Fox"
+  },
+  "816": {
+    "brand_id": 73,
+    "model_id": 501,
+    "brand": "Volkswagen",
+    "model": "Golf"
+  },
+  "817": {
+    "brand_id": 73,
+    "model_id": 458,
+    "brand": "Volkswagen",
+    "model": "Golf convertible"
+  },
+  "818": {
+    "brand_id": 73,
+    "model_id": 459,
+    "brand": "Volkswagen",
+    "model": "Golf estate"
+  },
+  "819": {
+    "brand_id": 73,
+    "model_id": 502,
+    "brand": "Volkswagen",
+    "model": "Golf GTI"
+  },
+  "820": {
+    "brand_id": 73,
+    "model_id": 456,
+    "brand": "Volkswagen",
+    "model": "Golf R"
+  },
+  "821": {
+    "brand_id": 73,
+    "model_id": 439,
+    "brand": "Volkswagen",
+    "model": "Gran Lavida"
+  },
+  "822": {
+    "brand_id": 73,
+    "model_id": 503,
+    "brand": "Volkswagen",
+    "model": "Jetta"
+  },
+  "823": {
+    "brand_id": 73,
+    "model_id": 483,
+    "brand": "Volkswagen",
+    "model": "Jetta abroad version"
+  },
+  "824": {
+    "brand_id": 73,
+    "model_id": 440,
+    "brand": "Volkswagen",
+    "model": "Lavide"
+  },
+  "825": {
+    "brand_id": 73,
+    "model_id": 504,
+    "brand": "Volkswagen",
+    "model": "Magotan"
+  },
+  "826": {
+    "brand_id": 73,
+    "model_id": 464,
+    "brand": "Volkswagen",
+    "model": "Magotan estate"
+  },
+  "827": {
+    "brand_id": 73,
+    "model_id": 463,
+    "brand": "Volkswagen",
+    "model": "Multivan"
+  },
+  "828": {
+    "brand_id": 73,
+    "model_id": 449,
+    "brand": "Volkswagen",
+    "model": "NMC"
+  },
+  "829": {
+    "brand_id": 73,
+    "model_id": 441,
+    "brand": "Volkswagen",
+    "model": "Passat"
+  },
+  "830": {
+    "brand_id": 73,
+    "model_id": 477,
+    "brand": "Volkswagen",
+    "model": "Passat abroad version"
+  },
+  "831": {
+    "brand_id": 73,
+    "model_id": 442,
+    "brand": "Volkswagen",
+    "model": "Passat Lingyu"
+  },
+  "832": {
+    "brand_id": 73,
+    "model_id": 460,
+    "brand": "Volkswagen",
+    "model": "Phaeton"
+  },
+  "833": {
+    "brand_id": 73,
+    "model_id": 470,
+    "brand": "Volkswagen",
+    "model": "Polo abroad version"
+  },
+  "834": {
+    "brand_id": 73,
+    "model_id": 435,
+    "brand": "Volkswagen",
+    "model": "Polo hatchback"
+  },
+  "835": {
+    "brand_id": 73,
+    "model_id": 454,
+    "brand": "Volkswagen",
+    "model": "R36"
+  },
+  "836": {
+    "brand_id": 73,
+    "model_id": 505,
+    "brand": "Volkswagen",
+    "model": "Sagitar"
+  },
+  "837": {
+    "brand_id": 73,
+    "model_id": 506,
+    "brand": "Volkswagen",
+    "model": "Sagitar GLI"
+  },
+  "838": {
+    "brand_id": 73,
+    "model_id": 443,
+    "brand": "Volkswagen",
+    "model": "Santana"
+  },
+  "839": {
+    "brand_id": 73,
+    "model_id": 444,
+    "brand": "Volkswagen",
+    "model": "Santana Vista"
+  },
+  "840": {
+    "brand_id": 73,
+    "model_id": 465,
+    "brand": "Volkswagen",
+    "model": "Scirocco"
+  },
+  "841": {
+    "brand_id": 73,
+    "model_id": 466,
+    "brand": "Volkswagen",
+    "model": "Scirocco R"
+  },
+  "842": {
+    "brand_id": 73,
+    "model_id": 469,
+    "brand": "Volkswagen",
+    "model": "Sharan"
+  },
+  "843": {
+    "brand_id": 73,
+    "model_id": 490,
+    "brand": "Volkswagen",
+    "model": "T-ROC"
+  },
+  "844": {
+    "brand_id": 73,
+    "model_id": 446,
+    "brand": "Volkswagen",
+    "model": "Tiguan"
+  },
+  "845": {
+    "brand_id": 73,
+    "model_id": 491,
+    "brand": "Volkswagen",
+    "model": "Tiguan abroad version"
+  },
+  "846": {
+    "brand_id": 73,
+    "model_id": 467,
+    "brand": "Volkswagen",
+    "model": "Touareg"
+  },
+  "847": {
+    "brand_id": 73,
+    "model_id": 468,
+    "brand": "Volkswagen",
+    "model": "Touareg hybrid"
+  },
+  "848": {
+    "brand_id": 73,
+    "model_id": 445,
+    "brand": "Volkswagen",
+    "model": "Touran"
+  },
+  "849": {
+    "brand_id": 73,
+    "model_id": 496,
+    "brand": "Volkswagen",
+    "model": "up"
+  },
+  "850": {
+    "brand_id": 73,
+    "model_id": 479,
+    "brand": "Volkswagen",
+    "model": "XL1"
+  },
+  "851": {
+    "brand_id": 111,
+    "model_id": 1701,
+    "brand": "Volvo",
+    "model": "C30"
+  },
+  "852": {
+    "brand_id": 111,
+    "model_id": 1719,
+    "brand": "Volvo",
+    "model": "C70"
+  },
+  "853": {
+    "brand_id": 111,
+    "model_id": 1716,
+    "brand": "Volvo",
+    "model": "Coupe"
+  },
+  "854": {
+    "brand_id": 111,
+    "model_id": 1720,
+    "brand": "Volvo",
+    "model": "S40"
+  },
+  "855": {
+    "brand_id": 111,
+    "model_id": 1702,
+    "brand": "Volvo",
+    "model": "S60"
+  },
+  "856": {
+    "brand_id": 111,
+    "model_id": 1722,
+    "brand": "Volvo",
+    "model": "S60L"
+  },
+  "857": {
+    "brand_id": 111,
+    "model_id": 1708,
+    "brand": "Volvo",
+    "model": "S80"
+  },
+  "858": {
+    "brand_id": 111,
+    "model_id": 1721,
+    "brand": "Volvo",
+    "model": "S80L"
+  },
+  "859": {
+    "brand_id": 111,
+    "model_id": 1703,
+    "brand": "Volvo",
+    "model": "V40"
+  },
+  "860": {
+    "brand_id": 111,
+    "model_id": 1704,
+    "brand": "Volvo",
+    "model": "V40 CrossCountry"
+  },
+  "861": {
+    "brand_id": 111,
+    "model_id": 1705,
+    "brand": "Volvo",
+    "model": "V60"
+  },
+  "862": {
+    "brand_id": 111,
+    "model_id": 1710,
+    "brand": "Volvo",
+    "model": "V70"
+  },
+  "863": {
+    "brand_id": 111,
+    "model_id": 1723,
+    "brand": "Volvo",
+    "model": "XC Classic"
+  },
+  "864": {
+    "brand_id": 111,
+    "model_id": 1717,
+    "brand": "Volvo",
+    "model": "XC Coupe"
+  },
+  "865": {
+    "brand_id": 111,
+    "model_id": 1706,
+    "brand": "Volvo",
+    "model": "XC60"
+  },
+  "866": {
+    "brand_id": 111,
+    "model_id": 1711,
+    "brand": "Volvo",
+    "model": "XC70"
+  },
+  "867": {
+    "brand_id": 111,
+    "model_id": 1707,
+    "brand": "Volvo",
+    "model": "XC90 abroad version"
+  }
+}

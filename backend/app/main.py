@@ -1,7 +1,7 @@
 from fastapi import Depends, FastAPI
 from sqlalchemy import text
 from sqlalchemy.orm import Session
-from app.routers import postsRouter, userRouter, authRouter
+from app.routers import explorerRouter, postsRouter, userRouter, authRouter, uploadRouter
 from app.core.config import settings
 from app.db import get_db
 
@@ -10,6 +10,8 @@ app = FastAPI(title=settings.app_name)
 app.include_router(postsRouter.router)
 app.include_router(userRouter.router)
 app.include_router(authRouter.router)
+app.include_router(uploadRouter.router)
+app.include_router(explorerRouter.router)
 
 @app.get("/")
 def read_root():

@@ -39,8 +39,36 @@
           }
         }
       ],
-      "expo-secure-store"
+      "expo-secure-store",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos to save images to your library.",
+          "savePhotosPermission": "Allow AutoSpot to save spotted car images."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow AutoSpot to select photos for posts.",
+          "cameraPermission": "Allow AutoSpot to take photos for posts.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission":"Allow AutoSpot to take photos for posts."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow AutoSpot to use your location when using the app"
+        }
+      ]
     ],
+
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true

@@ -1,4 +1,4 @@
-import { useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { AutoSpotColors } from '@/constants/autospotTheme';
@@ -8,17 +8,62 @@ import { followUser, getUserPosts, getUserProfile, unfollowUser } from '@/servic
 import { UserProfile } from '@/types/user';
 import { useAuthenticatedApi } from '@/hooks/useAuthenticatedApi';
 import { Post } from '@/types/post';
+import { likePost } from '@/services/api';
 
 export default function UserProfileScreen() {
   const { id } = useLocalSearchParams();
-  const { user: currentUser } = useAuth();
+  const { user: currentUser , token} = useAuth();
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [isFollowLoading, setIsFollowLoading] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const { authenticatedFetch } = useAuthenticatedApi();
   const [posts, setPosts] = useState<Post[]>([])
+  const [commentPostId, setCommentPostId] = useState<number | null>(null)
+  
+  const onToggleLike = async (postId: number) => {
+      if(!token){
+          setIsLoading(false)
+          router.replace('/auth/login')
+          return
+        }
+  
+      try {
+      setErrorMessage(null)
+      const LikeStatus = await likePost(postId, authenticatedFetch);
+      
+      setPosts((currentPosts) => currentPosts.map((post) => post.id === LikeStatus.post_id ? {
+        ...post,
+        likes_count: LikeStatus.likes_count,
+        is_liked_by_me: LikeStatus.is_liked_by_me,
+      }: post
+    )
+  );
+    } catch {
+      setErrorMessage('Could not update likes');
+    }
+    }
 
+  function handleOpenComments(postId: number){
+    setCommentPostId(postId)
+  }
+
+  function handleCommentCreated(postId: number){
+    setPosts((currentPosts) =>
+    currentPosts.map((post) => post.id === postId ? {
+      ...post,
+      comments_count: post.comments_count + 1 } : post))
+  }
+
+  function handleDeleteComment(postId: number){
+    setPosts((currentPosts) => currentPosts.map((post) => post.id === postId ? {
+      ...post,
+      comments_count: Math.max(post.comments_count - 1,  0),
+    }
+  : post
+))
+  }
+  
   useEffect(() => {
   async function loadUser() {
     try {
@@ -95,6 +140,8 @@ async function handleToggleFollow() {
       isCurrentUser={isCurrentUser}
       isFollowLoading={isFollowLoading}
       onToggleFollow={handleToggleFollow}
+      onToggleLike={onToggleLike}
+      onOpenComments={setCommentPostId}
     />
   );
 }

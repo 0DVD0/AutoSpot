@@ -8,4 +8,8 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 60
     refresh_token_expire_days: int = 30
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
+    supabase_url: str
+    supabase_service_role_key: str
+    supabase_post_images_bucket: str = "App-Img"
+    supabase_avatar_image_bucket: str = "Usr-Avtr"
 settings = Settings()

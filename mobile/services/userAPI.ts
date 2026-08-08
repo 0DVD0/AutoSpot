@@ -3,11 +3,11 @@ import { API_BASE_URL } from "./api";
 import type { AuthenticatedFetch } from "@/hooks/useAuthenticatedApi";
 import { FollowStatus } from "@/types/followStatus";
 import { Post } from "@/types/post";
+import type { ImagePickerAsset } from "expo-image-picker";
 
 export type UpdateUserProfileRequest = {
   username?: string;
   bio?: string | null;
-  avatar_url?: string | null;
 };
 
 export async function getUser(userId: number): Promise<User> {
@@ -91,4 +91,48 @@ export async function updateMyProfile(authenticatedFetch: AuthenticatedFetch, da
   }
 
   return response.json();
+}
+
+export async function uploadAvatar(authentificateFetch: AuthenticatedFetch, image: ImagePickerAsset): Promise<User> {
+    const formData = new FormData();
+
+    const mimeType = image.mimeType ?? 'image/jpeg'
+
+    const fileName = image.fileName ?? `avater-${Date.now()}.jpg`;
+
+    formData.append(
+        'file',
+        {
+            uri: image.uri,
+            name: fileName,
+            type: mimeType
+        } as any
+    )
+
+    const response = await authentificateFetch(`${API_BASE_URL}/users/me/avatar`,
+    {
+        method: 'PUT',
+        body: formData
+    }
+)
+
+if (!response.ok){
+    throw new Error('Could not upload avatar');
+}
+
+return response.json()
+}
+
+export async function deleteAvatar(authentification: AuthenticatedFetch): Promise<User> {
+    const response = await authentification(
+        `${API_BASE_URL}/users/me/avatar`,
+        {
+            method: 'DELETE'
+        }
+    )
+
+    if (!response.ok){
+        throw new Error('Could not delete avatar')
+    }
+    return response.json()
 }

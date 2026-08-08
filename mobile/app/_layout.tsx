@@ -22,6 +22,9 @@ export default function RootLayout() {
         <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
         <Stack.Screen name="settings" options={{title:'Settings', headerShown: true}} />
         <Stack.Screen name="edit-profile" options={{title:'Edit profile', headerShown: true}} />
+        <Stack.Screen name="postForm" options={{title:'Post Form', headerShown: true}}/>
+        <Stack.Screen name="users/[id]" options={{title: '', headerBackTitle: 'Back'}}/>
+        <Stack.Screen name="recent" options={{title:'Recent', headerShown: true, headerBackTitle:'Back'}}/>
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

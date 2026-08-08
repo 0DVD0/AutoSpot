@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 from app.models.post import Post
-from fastapi import HTTPException, status
+from fastapi import HTTPException, UploadFile, status
 from sqlalchemy.orm import Session
 from app.repositories import post_Repository
 from app.core.security import hash_password
@@ -8,7 +8,7 @@ from app.models.user import User
 from app.repositories import user_Repository, follow_Repository
 from app.schemas.userDTO import UserCreate, UserProfileRead, UserProfileUpdate
 from app.schemas.followDTO import FollowStatus
-from app.services import post_Service
+from app.services import post_Service, upload_Service
 
 def build_follow_status(db: Session, target_user_id: int, current_user_id: int) -> FollowStatus:
     return FollowStatus(
@@ -121,5 +121,42 @@ def update_user(db: Session, current_user: User, new_profile_data: UserProfileUp
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Username taken",
             )
+
     updated_user = user_Repository.patch_user(db, current_user, new_profile_data)
+    return updated_user
+
+def update_user_avatar(db: Session, current_user: User, file: UploadFile) -> User:
+    old_storage_path = current_user.avatar_storage_path
+
+    uploaded_avatar = upload_Service.upload_avatar_image(file, current_user.id)
+    try:
+        updated_user = user_Repository.update_user_avatar(db, current_user, str(uploaded_avatar.image_url), uploaded_avatar.storage_path)
+    except Exception:
+        try:
+            upload_Service.delete_avatar_image(
+                uploaded_avatar.storage_path
+            )
+        except HTTPException:
+            pass
+
+        raise
+    if old_storage_path is not None:
+        try: 
+            upload_Service.delete_avatar_image(old_storage_path)
+
+        except HTTPException:
+            pass
+
+    return updated_user
+
+def remove_user_avatar(db: Session, current_user: User) -> User:
+    old_storage_path = current_user.avatar_storage_path
+
+    updated_user = user_Repository.clear_user_avatar(db, current_user)
+
+    if old_storage_path is not None:
+        try:
+            upload_Service.delete_avatar_image( old_storage_path)
+        except HTTPException:
+            pass
     return updated_user

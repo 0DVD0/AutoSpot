@@ -20,6 +20,7 @@ def get_posts(db: Session = Depends(get_db), current_user: User = Depends(get_cu
 @router.delete("/{post_id}", response_model=bool)
 def remove_post(post_id: int, db: Session = Depends(get_db),current_user: User = Depends(get_current_user)):
     return post_Service.remove_user_post(db, post_id, current_user)
+
 @router.post("", response_model=PostRead, status_code=status.HTTP_201_CREATED)
 def create_post(post_data: PostCreate, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     return post_Service.create_post(db, post_data, current_user)

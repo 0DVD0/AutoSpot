@@ -9,12 +9,15 @@ import {
   Text,
   TextInput,
   View,
+  Image
 } from 'react-native';
 
 import { AutoSpotColors } from '@/constants/autospotTheme';
 import { useAuth } from '@/context/AuthContext';
 import { useAuthenticatedApi } from '@/hooks/useAuthenticatedApi';
-import { updateMyProfile } from '@/services/userAPI';
+import { deleteAvatar, updateMyProfile, uploadAvatar } from '@/services/userAPI';
+import * as ImagePicker from 'expo-image-picker';
+
 
 export default function EditProfileScreen() {
   const { user, refreshSession } = useAuth();
@@ -22,10 +25,13 @@ export default function EditProfileScreen() {
 
   const [username, setUsername] = useState('');
   const [bio, setBio] = useState('');
-  const [avatarUrl, setAvatarUrl] = useState('');
+  const [selectedAvatar, setSelectedAvatar] = useState<ImagePicker.ImagePickerAsset | null>(null)
+  const [shouldRemoveAvatar, setShouldRemoveAvatar] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-
+  const displayedAvatarUri =
+  selectedAvatar?.uri ??
+  (shouldRemoveAvatar ? null : user?.avatar_url ?? null);
   useEffect(() => {
     if (!user) {
       return;
@@ -33,13 +39,65 @@ export default function EditProfileScreen() {
 
     setUsername(user.username);
     setBio(user.bio ?? '');
-    setAvatarUrl(user.avatar_url ?? '');
   }, [user]);
+
+  async function chooseAvatar() {
+  try {
+    setErrorMessage(null);
+
+    const result =
+      await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ['images'],
+        allowsEditing: true,
+        aspect: [1, 1],
+        quality: 0.7,
+      });
+
+    if (!result.canceled && result.assets.length > 0) {
+      setSelectedAvatar(result.assets[0]);
+      setShouldRemoveAvatar(false);
+    }
+  } catch (error) {
+    console.error('[avatar] Gallery error:', error);
+    setErrorMessage('Could not select the photo.');
+  }
+}
+
+async function takeAvatarPhoto() {
+  let permission =
+    await ImagePicker.getCameraPermissionsAsync();
+
+  if (!permission.granted) {
+    permission =
+      await ImagePicker.requestCameraPermissionsAsync();
+  }
+
+  if (!permission.granted) {
+    setErrorMessage('Camera permission is required.');
+    return;
+  }
+
+  const result = await ImagePicker.launchCameraAsync({
+    mediaTypes: ['images'],
+    allowsEditing: true,
+    aspect: [1, 1],
+    quality: 0.7,
+  });
+
+  if (!result.canceled && result.assets.length > 0) {
+    setSelectedAvatar(result.assets[0]);
+    setShouldRemoveAvatar(false);
+  }
+}
+
+function markAvatarForRemoval() {
+  setSelectedAvatar(null);
+  setShouldRemoveAvatar(true);
+}
 
   async function handleSave() {
     const trimmedUsername = username.trim();
     const trimmedBio = bio.trim();
-    const trimmedAvatarUrl = avatarUrl.trim();
 
     if (!trimmedUsername) {
       setErrorMessage('Username is required.');
@@ -51,14 +109,22 @@ export default function EditProfileScreen() {
       setErrorMessage(null);
 
       await updateMyProfile(authenticatedFetch, {
-        username: trimmedUsername,
-        bio: trimmedBio || null,
-        avatar_url: trimmedAvatarUrl || null,
-      });
+  username: trimmedUsername,
+  bio: trimmedBio || null,
+});
 
-      await refreshSession();
+if (selectedAvatar) {
+  await uploadAvatar(
+    authenticatedFetch,
+    selectedAvatar,
+  );
+} else if (shouldRemoveAvatar) {
+  await deleteAvatar(authenticatedFetch);
+}
 
-      router.back();
+await refreshSession();
+
+router.back();
     } catch {
       setErrorMessage('Could not update profile.');
     } finally {
@@ -90,19 +156,55 @@ export default function EditProfileScreen() {
         </View>
 
         <View style={styles.field}>
-          <Text style={styles.label}>Avatar URL</Text>
-          <View style={styles.inputWrap}>
-            <Ionicons name="image-outline" size={18} color={AutoSpotColors.subtle} />
-            <TextInput
-              value={avatarUrl}
-              onChangeText={setAvatarUrl}
-              placeholder="https://example.com/avatar.jpg"
-              placeholderTextColor={AutoSpotColors.subtle}
-              autoCapitalize="none"
-              keyboardType="url"
-              style={styles.input}
-            />
-          </View>
+          <View style={styles.avatarSection}>
+  {displayedAvatarUri ? (
+    <Image
+      source={{ uri: displayedAvatarUri }}
+      style={styles.avatarPreview}
+    />
+  ) : (
+    <View style={styles.avatarPlaceholder}>
+      <Ionicons
+        name="person"
+        size={46}
+        color={AutoSpotColors.subtle}
+      />
+    </View>
+  )}
+
+  <View style={styles.avatarActions}>
+    <Pressable
+      style={styles.avatarButton}
+      onPress={takeAvatarPhoto}
+      disabled={isSubmitting}
+    >
+      <Text style={styles.avatarButtonText}>
+        Take photo
+      </Text>
+    </Pressable>
+
+    <Pressable
+      style={styles.avatarButton}
+      onPress={chooseAvatar}
+      disabled={isSubmitting}
+    >
+      <Text style={styles.avatarButtonText}>
+        Choose photo
+      </Text>
+    </Pressable>
+  </View>
+
+  {displayedAvatarUri ? (
+    <Pressable
+      onPress={markAvatarForRemoval}
+      disabled={isSubmitting}
+    >
+      <Text style={styles.removeAvatarText}>
+        Remove avatar
+      </Text>
+    </Pressable>
+  ) : null}
+</View>
         </View>
 
         <View style={styles.field}>
@@ -215,4 +317,55 @@ const styles = StyleSheet.create({
   disabledButton: {
     opacity: 0.65,
   },
+  avatarSection: {
+  alignItems: 'center',
+  marginBottom: 24,
+},
+
+avatarPreview: {
+  width: 120,
+  height: 120,
+  borderRadius: 60,
+  borderWidth: 2,
+  borderColor: AutoSpotColors.primary,
+},
+
+avatarPlaceholder: {
+  width: 120,
+  height: 120,
+  borderRadius: 60,
+  borderWidth: 2,
+  borderColor: AutoSpotColors.primary,
+  backgroundColor: AutoSpotColors.charcoal,
+  alignItems: 'center',
+  justifyContent: 'center',
+},
+
+avatarActions: {
+  flexDirection: 'row',
+  gap: 12,
+  marginTop: 14,
+},
+
+avatarButton: {
+  minHeight: 42,
+  paddingHorizontal: 16,
+  borderRadius: 10,
+  borderWidth: 1,
+  borderColor: AutoSpotColors.border,
+  backgroundColor: AutoSpotColors.charcoal,
+  alignItems: 'center',
+  justifyContent: 'center',
+},
+
+avatarButtonText: {
+  color: AutoSpotColors.text,
+  fontWeight: '700',
+},
+
+removeAvatarText: {
+  color: AutoSpotColors.danger,
+  marginTop: 14,
+  fontWeight: '700',
+},
 });

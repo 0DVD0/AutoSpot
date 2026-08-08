@@ -34,5 +34,4 @@ class UserProfileRead(UserBase):
 
 class UserProfileUpdate(BaseModel):
     username: str | None = Field(default=None, min_length=5, max_length=20)
-    avatar_url: HttpUrl | None = None
     bio: str | None = Field(default=None, max_length=100)

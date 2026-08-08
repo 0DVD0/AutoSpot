@@ -45,3 +45,21 @@ def patch_user(db: Session, user: User, new_profile_data: UserProfileUpdate):
     db.commit()
     db.refresh(user)
     return user
+
+def update_user_avatar(db: Session, user: User, avatar_url: str, avatar_storage_path: str) -> User:
+    user.avatar_storage_path = avatar_storage_path
+    user.avatar_url = avatar_url
+
+    db.commit()
+    db.refresh(user)
+
+    return user
+
+def clear_user_avatar(db: Session, user: User) -> User:
+    user.avatar_url = None
+    user.avatar_storage_path = None
+
+    db.commit()
+    db.refresh(user)
+
+    return user

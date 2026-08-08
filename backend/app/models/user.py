@@ -11,6 +11,7 @@ class User(Base):
     email: Mapped[str] = mapped_column(String(255), unique=True, index=True)
     hashed_password: Mapped[str] = mapped_column(String(255))
     avatar_url: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    avatar_storage_path: Mapped[str | None] = mapped_column(String(250), nullable=True)
     bio: Mapped[str | None] = mapped_column(Text, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
     posts: Mapped[list["Post"]] = relationship(back_populates="user")

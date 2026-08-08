@@ -1,4 +1,4 @@
-import { Image, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Modal, Pressable, StyleSheet, Text, View, Alert } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useState } from 'react';
 import { AutoSpotColors } from '@/constants/autospotTheme';
@@ -43,15 +43,25 @@ export function PostCard({ post, currentUserId, onDelete, onToggleLike, onOpenCo
   const [isDownloading, setIsDownloading] = useState(false)
 
   async function handleDownloadImage(){
+    if (isDownloading) return;
+
   try {
     setIsDownloading(true);
-    setMenuVisible(false);
-
     await downloadImageToLibrary(post.image_url);
-  } catch {
-    console.log('Could not download image');
+
+    
+    Alert.alert('Image downloaded', 'The image has been saved to your gallery.');
+  } catch (error){
+    const message =
+    error instanceof Error
+      ? error.message
+      : 'Could not download image';
+
+  console.error('Error downloading image:', error);
+  Alert.alert('Download failed', message);
   } finally {
     setIsDownloading(false);
+    setMenuVisible(false);
   }
 }
   return (
@@ -89,14 +99,6 @@ export function PostCard({ post, currentUserId, onDelete, onToggleLike, onOpenCo
         <Text style={styles.username}>@{post.user.username}</Text>
       </Pressable>
 
-      <View style={styles.locationRow}>
-        <Ionicons name="location-outline" size={14} color={AutoSpotColors.subtle} />
-        <Text style={styles.location}>
-          {post.latitude && post.longitude
-            ? `${post.latitude.toFixed(2)}, ${post.longitude.toFixed(2)}`
-            : 'Approximate'}
-        </Text>
-      </View>
     </View>
 
     <View style={styles.actionsRow}>
@@ -242,16 +244,6 @@ const styles = StyleSheet.create({
     color: AutoSpotColors.muted,
     fontSize: 14,
     fontWeight: '600',
-  },
-  locationRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-    flexShrink: 1,
-  },
-  location: {
-    color: AutoSpotColors.subtle,
-    fontSize: 12,
   },
   actionsRow: {
     flexDirection: 'row',

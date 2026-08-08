@@ -1,5 +1,5 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Pressable, StyleSheet, Text, View, RefreshControl, Image } from 'react-native';
 
 import { AutoSpotColors } from '@/constants/autospotTheme';
 import { Post } from '@/types/post';
@@ -12,6 +12,11 @@ type ProfileViewProps = {
   currentUserId?: number;
   isCurrentUser: boolean;
   isFollowLoading?: boolean;
+  onDeletePost?: (postId: number) => void
+  onToggleLike?: (postId: number) => void
+  onOpenComments?: (postId: number) => void
+  refreshing?: boolean;
+  onRefresh?: () => void;
   onEditProfile?: () => void;
   onOpenSettings?: () => void;
   onToggleFollow?: () => void;
@@ -22,9 +27,14 @@ export function ProfileView({
   profile,
   isCurrentUser,
   onEditProfile,
+  refreshing,
+  onRefresh,
   onOpenSettings,
   onLogout,
   onToggleFollow,
+  onDeletePost,
+  onOpenComments,
+  onToggleLike,
   isFollowLoading,
   posts,
   currentUserId,
@@ -33,6 +43,17 @@ export function ProfileView({
     <FlatList
       data={posts}
       keyExtractor={(item) => String(item.id)}
+      ItemSeparatorComponent={() => (
+        <View style={styles.postSeparator} />
+      )}
+      refreshControl={
+        onRefresh ? (
+          <RefreshControl
+            refreshing={refreshing ?? false}
+            onRefresh={onRefresh}
+          />
+        ) : undefined
+      }
       ListHeaderComponent={
         <View style={styles.screen}>
           {isCurrentUser && (
@@ -41,8 +62,20 @@ export function ProfileView({
             </Pressable>
           )}
 
-          <View style={styles.avatar} />
-
+        {profile.avatar_url ? (
+          <Image
+            source={{ uri: profile.avatar_url }}
+            style={styles.avatar}
+          />
+        ) : (
+          <View style={styles.avatar}>
+            <Ionicons
+              name="person"
+              size={42}
+              color={AutoSpotColors.subtle}
+            />
+          </View>
+        )}
           <Text style={styles.username}>@{profile.username}</Text>
           <Text style={styles.bio}>{profile.bio ?? 'Car enthusiast profile'}</Text>
 
@@ -94,6 +127,9 @@ export function ProfileView({
         <PostCard
           post={item}
           currentUserId={currentUserId}
+          onDelete={onDeletePost}
+          onOpenComments={onOpenComments}
+          onToggleLike={onToggleLike}
         />
       )}
     />
@@ -125,6 +161,8 @@ const styles = StyleSheet.create({
     width: 96,
     height: 96,
     borderRadius: 48,
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: AutoSpotColors.charcoal,
     borderWidth: 2,
     borderColor: AutoSpotColors.primary,
@@ -205,5 +243,8 @@ const styles = StyleSheet.create({
     paddingTop: 18,
     borderTopWidth: 1,
     borderTopColor: AutoSpotColors.border,
+  },
+  postSeparator: {
+  height: 16,
   },
 });

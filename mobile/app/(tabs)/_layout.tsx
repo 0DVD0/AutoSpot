@@ -56,11 +56,11 @@ if (!token) {
         name="post"
         options={{
           title: 'Post',
-          tabBarIcon: ({ focused }) => (
+          tabBarIcon: ({ color, size }) => (
             <Ionicons
               name="camera"
-              size={34}
-              color={focused ? AutoSpotColors.text : AutoSpotColors.primary}
+              size={size}
+              color={color}
             />
           ),
         }}

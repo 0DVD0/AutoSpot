@@ -1,3 +1,8 @@
+export type LocationVisibility = 
+| 'public'
+| 'approximate'
+| 'private'
+
 export type Post = {
   id: number;
   user_id: number;
@@ -6,7 +11,7 @@ export type Post = {
   model: string | null;
   latitude: number | null;
   longitude: number | null;
-  location_visibility: string;
+  location_visibility: LocationVisibility;
   is_active: boolean;
   created_at: string;
   expires_at: string;

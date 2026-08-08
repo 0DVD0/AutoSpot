@@ -4,11 +4,12 @@ from sqlalchemy.orm import Session
 from app.models.post import Post
 from app.models.user import User
 from app.models.interactions.like import Like
-from app.repositories import post_Repository, user_Repository, like_Repository, comment_Repository
+from app.repositories import post_Repository, like_Repository, comment_Repository
 from app.schemas.postDTO import PostCreate
 from app.schemas.likeDTO import LikeStatus
 from app.models.interactions.comment import Comment
 from app.schemas.commentDTO import CommentCreate
+from app.services import upload_Service
 
 def add_post_social_status(db: Session, post: Post, current_user: User) -> Post:
     post.likes_count = like_Repository.count_likes(db, post.id)
@@ -24,25 +25,90 @@ def add_posts_social_status(db: Session, posts: list[Post], current_user: User) 
 
 def get_feed(db: Session, current_user: User) -> list[Post]:
     now = datetime.now(timezone.utc)
+    expired_posts = post_Repository.get_expired_posts(db, now)
+    upload_Service.remove_expired_posts_images(expired_posts)
+    post_Repository.remove_expired_posts(db, now)
+    posts = post_Repository.get_home_posts(db, current_user.id, now)
+    return add_posts_social_status(db, posts, current_user)
 
-    post_Repository.deactivate_expired_posts(db, now)
-    posts = post_Repository.get_posts(db, now)
+def get_explore_feed(db: Session, current_user: User, min_lat: float, max_lat: float, min_lng: float, max_lng: float, limit: int,) -> list[Post]:
+    if min_lat >= max_lat:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=(
+                "min_lat must be smaller than max_lat"
+            ),
+        )
+
+    if min_lng >= max_lng:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=(
+                "min_lng must be smaller than max_lng"
+            ),
+        )
+
+    now = datetime.now(timezone.utc)
+
+    posts = post_Repository.get_explorer_post(
+        db=db,
+        current_user_id=current_user.id,
+        now=now,
+        min_lat=min_lat,
+        max_lat=max_lat,
+        min_lng=min_lng,
+        max_lng=max_lng,
+        limit=limit,
+    )
+
     return add_posts_social_status(db, posts, current_user)
 
 def remove_user_post(db: Session, post_id: int, current_user: User) -> bool:
-    deleted_count = post_Repository.remove_user_post_by_id(db, post_id, current_user.id)
 
+    post = post_Repository.get_post_by_user_id(db, post_id, current_user.id)
+
+    if post is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Post not found"
+        )
+    upload_Service.delete_post_image(post.image_storage_path)
+    deleted_count = post_Repository.remove_user_post_by_id(db, post.id, current_user.id)
+    
     if deleted_count == 0:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Post not found or you do not have permission to delete it"
+            detail="Post not found",
         )
-
     return True
 
 def create_post(db: Session, post: PostCreate, current_user: User ) -> Post:
     
-    created_post = post_Repository.create_post(post, db, current_user.id)
+    expected_prefix = f"users/{current_user.id}/"
+
+    if not post.image_storage_path.startswith(expected_prefix):
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Invalid image storage path",
+        )
+
+    post_to_create = post 
+    if post.location_visibility == "approximate":
+        post_to_create = post.model_copy(
+            update={
+                "latitude": round(post.latitude, 3),
+                "longitude": round(post.longitude, 3)
+            }    
+        )
+
+    if post.location_visibility == "private":
+        post_to_create = post.model_copy(
+            update={
+                "latitude": None,
+                "longitude": None
+            }
+        )
+    created_post = post_Repository.create_post(post_to_create, db, current_user.id)
     now = datetime.now(timezone.utc)
     post_with_user = post_Repository.get_post(created_post.id, db, now)
 
@@ -185,3 +251,10 @@ def delete_comment(db: Session, post_id: int, comment_id: int, current_user: Use
 
     return deleted_count > 0
 
+def get_recent_posts(db: Session, current_user: User, limit: int) -> list[Post]:
+    now = datetime.now(timezone.utc)
+    
+    posts = post_Repository.get_hidden_posts(db, current_user.id, now, limit)
+    
+    return add_posts_social_status(db, posts, current_user)
+    

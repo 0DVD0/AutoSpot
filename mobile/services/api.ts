@@ -1,17 +1,27 @@
 import { Comment } from "@/types/comment";
-import { Post } from "@/types/post";
+import { LocationVisibility, Post } from "@/types/post";
 import type { AuthenticatedFetch } from "@/hooks/useAuthenticatedApi";
 
-export const API_BASE_URL = 'http://192.168.100.11:8000';
+const apiBaseUrl =
+  process.env.EXPO_PUBLIC_API_BASE_URL;
 
-type PostCreation = {
+if (!apiBaseUrl) {
+  throw new Error(
+    'EXPO_PUBLIC_API_BASE_URL is not configured'
+  );
+}
+
+export const API_BASE_URL = apiBaseUrl;
+
+export type PostCreation = {
     image_url: string;
+    image_storage_path: string;
     brand: string | null;
     model: string | null;
     ai_confidence?: number | null;
     latitude: number | null;
     longitude: number | null;
-    location_visibility: string;
+    location_visibility: LocationVisibility;
 };
 
 type LikeStatus = {
