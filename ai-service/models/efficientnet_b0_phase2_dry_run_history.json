@@ -1,0 +1,22 @@
+[
+  {
+    "epoch": 1,
+    "checkpoint_saved": true,
+    "train": {
+      "loss": 3.6705811500549315,
+      "top_1_accuracy": 0.403125,
+      "top_3_accuracy": 0.5675,
+      "samples": 1600,
+      "batches": 50,
+      "elapsed_seconds": 7.988632000007783
+    },
+    "validation": {
+      "loss": 3.9644399166107176,
+      "top_1_accuracy": 0.3171875,
+      "top_3_accuracy": 0.490625,
+      "samples": 640,
+      "batches": 20,
+      "elapsed_seconds": 3.4120742499944754
+    }
+  }
+]

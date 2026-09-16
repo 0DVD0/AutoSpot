@@ -1,0 +1,21 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "loss": 7.068208208084107,
+      "top_1_accuracy": 0.0075,
+      "top_3_accuracy": 0.013125,
+      "samples": 1600,
+      "batches": 50,
+      "elapsed_seconds": 4.718231708990061
+    },
+    "validation": {
+      "loss": 6.742487812042237,
+      "top_1_accuracy": 0.0421875,
+      "top_3_accuracy": 0.0578125,
+      "samples": 640,
+      "batches": 20,
+      "elapsed_seconds": 1.9521242500049993
+    }
+  }
+]

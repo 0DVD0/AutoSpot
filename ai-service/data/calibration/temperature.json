@@ -1,0 +1,11 @@
+{
+  "temperature": 0.6426575779914856,
+  "nll_before": 1.1787132024765015,
+  "nll_after": 0.948212206363678,
+  "top1_accuracy_before": 0.7756675481796265,
+  "top1_accuracy_after": 0.7756675481796265,
+  "sample_count": 14269,
+  "class_count": 868,
+  "checkpoint_phase": 3,
+  "checkpoint_epoch": 3
+}

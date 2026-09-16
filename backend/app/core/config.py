@@ -12,4 +12,6 @@ class Settings(BaseSettings):
     supabase_service_role_key: str
     supabase_post_images_bucket: str = "App-Img"
     supabase_avatar_image_bucket: str = "Usr-Avtr"
+    ai_service_url: str = "http://127.0.0.1:8001"
+    ai_service_timeout: float = 180.0
 settings = Settings()

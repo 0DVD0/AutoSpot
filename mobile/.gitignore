@@ -41,3 +41,7 @@ app-example
 # generated native folders
 /ios
 /android
+
+# AI model checkpoints
+ai-service/models/*.pt
+ai-service/models/*.tmp

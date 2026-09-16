@@ -1,0 +1,14 @@
+torch
+torchvision
+Pillow
+numpy
+pandas
+scipy
+matplotlib
+ollama
+pydantic
+httpx
+open-image-models[onnx]
+fastapi
+uvicorn[standard]
+python-multipart

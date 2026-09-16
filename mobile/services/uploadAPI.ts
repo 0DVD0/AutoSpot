@@ -6,6 +6,10 @@ import { API_BASE_URL } from "./api";
 export type UploadResult = {
     image_url: string;
     storage_path: string;
+    ai_status: 'suggested' | 'brand_only' | 'not_identified' | 'unavailable'
+    brand: string | null
+    model: string | null
+    plates_blurred: number
 }
 
 export async function uploadPostImage(authentificatedFetch: AuthenticatedFetch, image: ImagePickerAsset): Promise<UploadResult> {

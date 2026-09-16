@@ -1,0 +1,14 @@
+{
+  "architecture": "efficientnet_b0",
+  "checkpoint": "/Users/dvd/Desktop/AutoSpot/ai-service/models/efficientnet_b0_phase3_best.pt",
+  "checkpoint_phase": 3,
+  "checkpoint_epoch": 3,
+  "class_count": 868,
+  "test_manifest": "/Users/dvd/Desktop/AutoSpot/ai-service/data/splits/test.csv",
+  "test_images": 15084,
+  "test_batches": 472,
+  "loss": 2.1468957203890593,
+  "top_1_accuracy": 0.7729382126756829,
+  "top_3_accuracy": 0.8847122779103685,
+  "elapsed_seconds": 42.93625991600857
+}

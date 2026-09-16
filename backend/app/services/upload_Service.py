@@ -4,6 +4,7 @@ from supabase import Client, create_client
 from app.core.config import settings
 from app.models.post import Post
 from app.schemas.uploadDTO import UploadRead
+from app.services import ai_service
 
 MAX_IMAGE_SIZE = 5 * 1024 * 1024
 ALLOWED_IMAGE_FORMATS = {
@@ -39,9 +40,16 @@ def upload_post_image(file: UploadFile, user_id: int) -> UploadRead:
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Image too large"
         )
-    
-    extention = ALLOWED_IMAGE_FORMATS[content_type]
-    file_name = f"{uuid4()}{extention}"
+    processed_image = ai_service.process_post_image(
+        image_content=file_content,
+        file_name=file.filename or "upload.jpg",
+        content_type=content_type,
+    )
+    file_content = processed_image.image_bytes
+    content_type = processed_image.content_type
+
+    extention = ".jpg"
+    file_name = f"{uuid4()}.{extention}"
     storage_path = f"users/{user_id}/{file_name}"
 
     try:
@@ -70,7 +78,7 @@ def upload_post_image(file: UploadFile, user_id: int) -> UploadRead:
             status_code=status.HTTP_502_BAD_GATEWAY,
             detail="Could not upload image"
         ) from error
-    return UploadRead(image_url=image_url, storage_path=storage_path)
+    return UploadRead(image_url=image_url, storage_path=storage_path, ai_status=processed_image.identification.status, brand=processed_image.identification.brand, model=processed_image.identification.model, plates_blurred=processed_image.plates_detected)
 
 def delete_post_image(storage_path: str) -> None:
     try:

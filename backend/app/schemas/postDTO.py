@@ -10,8 +10,8 @@ LocationVisibility = Literal[
 
 class PostBase(BaseModel):
     image_url: HttpUrl
-    brand: str | None = Field(min_length=None, max_length=10)
-    model: str | None = Field(min_length=None, max_length=70)
+    brand: str | None = Field(min_length=None, max_length=100)
+    model: str | None = Field(min_length=None, max_length=100)
     ai_confidence: float | None = None
     latitude: float | None = Field(
         default=None,
